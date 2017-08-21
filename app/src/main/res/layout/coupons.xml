@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loginLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title" />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.wash.daoliu.library.PullToRefreshListView
+            android:id="@+id/lv_coupons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#d3d7d4"
+            android:fadingEdge="none"
+            android:orientation="vertical"
+            ptr:ptrAnimationStyle="flip"
+            ptr:ptrMode="both" />
+
+        <com.wash.daoliu.view.EmptyView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            ptr:emptyContent="@string/coupon_empty_content"
+            ptr:emptyIconRes="@drawable/icon_nothing_ticket"
+            ptr:emptyTitle="@string/coupon_empty_title" />
+    </RelativeLayout>
+</LinearLayout>

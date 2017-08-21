@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mypwdedittext="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loginLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/close_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="closeApp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/nav_close" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/login_label_signin"
+            android:textColor="@color/text_color2"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:text="@string/login_label_register"
+            android:textColor="@color/text_color2"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+
+    <com.wash.daoliu.view.LoginClearableEditText
+        android:id="@+id/username_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl1"
+        android:layout_marginTop="30dp"
+        android:hint="@string/mobile_number_hint"
+        android:inputType="number"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp" />
+
+    <com.wash.daoliu.view.MyPwdEditText
+        android:id="@+id/password_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username_et"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:hint="@string/new_password_hint"
+        android:inputType="text"
+        android:password="true"
+        mypwdedittext:pwdClearRight="12"
+        mypwdedittext:pwdImageID="@drawable/icon_password"
+        mypwdedittext:pwdImageLeft="12" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_et"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp">
+
+        <ImageView
+            android:id="@+id/mobile_icon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="12dp"
+            android:src="@drawable/icon_captcha" />
+
+        <EditText
+            android:id="@+id/picCode_et"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/picCode_iv"
+            android:layout_toRightOf="@id/mobile_icon2"
+            android:background="@null"
+            android:hint="@string/verifycode_hint"
+            android:inputType="number"
+            android:maxLength="4"
+            android:paddingBottom="10dp"
+            android:paddingLeft="18dp"
+            android:paddingTop="10dp"
+            android:textColorHint="@color/label_grey1"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/picCode_et"
+            android:background="#E2E2E2"
+            android:orientation="vertical" />
+
+
+        <ImageView
+            android:id="@+id/picCode_iv"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:background="@null"
+            android:onClick="getPicCode"
+            android:paddingLeft="12dp"
+            android:src="@drawable/refresh" />
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/v6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rl2"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:background="#E2E2E2" />
+
+    <RelativeLayout
+        android:id="@+id/rl4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v6"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp">
+
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_radius"
+            android:enabled="false"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/login_label_signin"
+            android:textColor="@color/button_text"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/tv_forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_login"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:paddingTop="22dp"
+            android:text="@string/forgotten_password"
+            android:textColor="@color/recommend"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

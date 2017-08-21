@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myedittext2="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loginLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="right|center_vertical"
+            android:text="@string/username"
+            android:textColor="@color/label_grey1"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="18dp"
+            android:layout_weight="5"
+            android:background="@null"
+            android:gravity="left|center"
+            android:hint="@string/input_your_name"
+            android:paddingLeft="5dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/text_color2"
+            android:textColorHint="@color/label_grey1"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/v2"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:text="@string/identity_card"
+            android:textColor="@color/label_grey1"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_idcard"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="18dp"
+            android:layout_weight="2.5"
+            android:background="@null"
+            android:gravity="left|center"
+            android:hint="@string/idcard_hint"
+            android:paddingLeft="5dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/text_color2"
+            android:textColorHint="@color/label_grey1"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/v2"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:text="@string/education_background"
+            android:textColor="@color/label_grey1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_education"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="18dp"
+            android:layout_weight="2.5"
+            android:background="@null"
+            android:drawablePadding="8dp"
+            android:drawableRight="@drawable/icon_enter"
+            android:gravity="left|center"
+            android:hint="@string/education_hint"
+            android:paddingLeft="5dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/text_color2"
+            android:textColorHint="@color/label_grey1"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/iv3"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/tv_idcard"
+        android:background="@color/divider_gray_1"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/v2"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:text="@string/job"
+            android:textColor="@color/label_grey1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_job"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="18dp"
+            android:layout_weight="2.5"
+            android:background="@null"
+            android:drawableRight="@drawable/icon_enter"
+            android:gravity="left|center"
+            android:hint="@string/job_hint"
+            android:paddingLeft="5dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/text_color2"
+            android:textColorHint="@color/label_grey1"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/iv4"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/tv_education"
+        android:background="@color/divider_gray_1"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/v2"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:text="@string/income"
+            android:textColor="@color/label_grey1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_income"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="18dp"
+            android:layout_weight="2.5"
+            android:background="@null"
+            android:drawableRight="@drawable/icon_enter"
+            android:gravity="left|center"
+            android:hint="@string/income_hint"
+            android:paddingLeft="5dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/text_color2"
+            android:textColorHint="@color/label_grey1"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/iv5"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/tv_job"
+        android:background="@color/divider_gray_1"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/v2"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:text="@string/creditcard"
+            android:textColor="@color/label_grey1"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.30">
+
+            <com.wash.daoliu.view.UISwitchButton
+                android:id="@+id/toggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="24dp"
+                android:background="@color/transparent"
+                android:checked="false"
+                android:textOff="未办理"
+                android:textOn="办理过" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_radius"
+            android:enabled="true"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/btn_confirm_yes"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

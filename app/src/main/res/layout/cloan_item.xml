@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/background_color1" />
+
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="29dp" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/iv_logo"
+        android:layout_marginLeft="30dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/text_gray_3"
+        android:textSize="14sp"
+        android:text="placeholder" />
+
+    <TextView
+        android:id="@+id/tv_remark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@+id/iv_logo"
+        android:layout_marginLeft="30dp"
+        android:textSize="12sp"
+        android:textColor="@color/text_gray_9"
+        android:text="placeholder" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_remark"
+        android:layout_toRightOf="@+id/iv_logo"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="10dp"
+        android:paddingRight="15dp">
+
+
+        <TextView
+            android:id="@+id/tv_l1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center"
+            android:textSize="12sp"
+            android:textColor="@color/text_gray_9"
+            android:text="@string/apply_customer" />
+
+        <TextView
+            android:id="@+id/tv_apply_customer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_l1"
+            android:gravity="left|center"
+            android:textSize="12sp"
+            android:textColor="@color/yellow_color_detail"
+
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/tv_l2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_rate"
+            android:textSize="12sp"
+            android:textColor="@color/text_gray_9"
+            android:text="@string/rate" />
+
+        <TextView
+            android:id="@+id/tv_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:layout_marginRight="40dp"
+            android:gravity="left|center"
+            android:textSize="12sp"
+            android:textColor="@color/yellow_color_detail"
+            android:text="0" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="20dp"
+        android:src="@drawable/icon_enter" />
+
+
+    <View
+        android:id="@+id/v2"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/background_color1" />
+
+
+</RelativeLayout>

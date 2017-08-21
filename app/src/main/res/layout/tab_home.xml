@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/id_include"
+        layout="@layout/base_title" />
+
+    <com.wash.daoliu.library.PullToRefreshScrollView
+        android:id="@+id/pull_to_refresh_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/id_include"
+        android:layout_marginBottom="34dp"
+        android:orientation="vertical"
+        custom:ptrAnimationStyle="flip">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/normal_bg"
+            android:orientation="vertical">
+
+            <com.wash.daoliu.view.BannerView
+                android:id="@+id/id_viewflow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:text="——为您推荐以下贷款产品——"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+            <!--android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/srl_cloan"
+                android:background="@color/button_yellow_1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"-->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_cloan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+            <!--/android.support.v4.widget.SwipeRefreshLayout-->
+
+        </LinearLayout>
+
+
+    </com.wash.daoliu.library.PullToRefreshScrollView>
+
+
+</RelativeLayout>

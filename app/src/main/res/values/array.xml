@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="loan_time_array">
+        <item>0</item>
+        <item>一个月</item>
+        <item>两个月</item>
+        <item>三个月</item>   <!-- 特殊字符要转义-->
+        <item>六个月</item>
+        <item>九个月</item>
+        <item>一年</item>
+    </string-array>
+    <string-array name="loan_amount_array">
+        <item>0</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>3000</item>   <!-- 特殊字符要转义-->
+        <item>5000</item>
+        <item>6000</item>
+        <item>8000</item>
+        <item>10000</item>
+    </string-array>
+    <string-array name="education_array">
+        <item>本科</item>
+        <item>大专</item>
+        <item>中专</item>
+        <item>高中</item>   <!-- 特殊字符要转义-->
+        <item>初中</item>
+        <item>小学</item>
+        <item>硕士</item>
+        <item>博士</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="education_value_array">
+        <item>BACHELOR</item>
+        <item>COLLEGE</item>
+        <item>SECONDARY</item>
+        <item>HIGH_SCHOOL</item>   <!-- 特殊字符要转义-->
+        <item>MIDDLE_SCHOOL</item>
+        <item>PRIMARY_SCHOOL</item>
+        <item>MASTER</item>
+        <item>DOCTOR</item>
+        <item>OTHERS</item>
+    </string-array>
+
+
+    <string-array name="job_array">
+        <item>工人</item>
+        <item>技工</item>
+        <item>服务员</item>
+        <item>快递员</item>   <!-- 特殊字符要转义-->
+        <item>工程师</item>
+        <item>农民</item>
+        <item>白领</item>
+        <item>教师</item>
+        <item>其他</item>
+    </string-array>
+
+
+    <string-array name="job_value_array">
+        <item>WORKER</item>
+        <item>CRAFTSMAN</item>
+        <item>WAITER</item>
+        <item>COURIER</item>   <!-- 特殊字符要转义-->
+        <item>ENGINEER</item>
+        <item>FARMER</item>
+        <item>WHITE_COLLAR</item>
+        <item>TEACHER</item>
+        <item>OTHERS</item>
+    </string-array>
+
+    <string-array name="income_array">
+        <item>0~1000</item>
+        <item>1000~2000</item>
+        <item>2000~3500</item>
+        <item>3500~5000</item>   <!-- 特殊字符要转义-->
+        <item>5000~7000</item>
+        <item>7000~8000</item>
+        <item>8000~10000</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="income_value_array">
+        <item>L1</item>
+        <item>L2</item>
+        <item>L3</item>
+        <item>L4</item>   <!-- 特殊字符要转义-->
+        <item>L5</item>
+        <item>L6</item>
+        <item>L7</item>
+        <item>L8</item>
+        <item>OTHERS</item>
+    </string-array>
+
+
+    <string-array name="loan_date">
+        <item>0</item>
+        <item>7天</item>
+        <item>15天</item>
+        <item>30天</item>   <!-- 特殊字符要转义-->
+        <item>60天</item>
+        <item>90天</item>
+        <item>180天</item>
+        <item>360天</item>
+        <item>不限制</item>
+    </string-array>
+
+    <string-array name="loan_amount">
+        <item>1000</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>5000</item>   <!-- 特殊字符要转义-->
+        <item>8000</item>
+        <item>10000</item>
+        <item>20000</item>
+        <item>其他</item>
+    </string-array>
+
+
+</resources>

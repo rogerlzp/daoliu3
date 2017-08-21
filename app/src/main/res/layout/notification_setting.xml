@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/background_color1" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/background_color1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_centerVertical="true"
+            android:background="@color/white"
+            android:drawablePadding="6dp"
+            android:gravity="left|center"
+            android:paddingLeft="24dp"
+            android:paddingRight="18dp"
+            android:text="@string/notification_receive"
+            android:textColor="@color/text_color2" />
+
+        <com.wash.daoliu.view.UISwitchButton
+            android:id="@+id/receive_switch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@color/transparent"
+            android:checked="false"
+            android:textOff=""
+            android:textOn="" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/background_color1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:padding="10dp"
+        android:text="@string/notice_off_hint"
+        android:textSize="12sp"
+        android:textColor="@color/text_color1" />
+
+    <LinearLayout
+        android:id="@+id/set_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/background_color1" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_centerVertical="true"
+
+                android:drawablePadding="6dp"
+                android:gravity="left|center"
+                android:paddingLeft="24dp"
+                android:paddingRight="18dp"
+                android:text="@string/notification_sound"
+                android:textColor="@color/text_color2" />
+
+            <com.wash.daoliu.view.UISwitchButton
+                android:id="@+id/sound_switch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@color/transparent"
+                android:checked="false"
+                android:textOff=""
+                android:textOn="" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="24dp"
+            android:background="@color/background_color1" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_centerVertical="true"
+
+                android:drawablePadding="6dp"
+                android:gravity="left|center"
+                android:paddingLeft="24dp"
+                android:paddingRight="18dp"
+                android:text="@string/notification_vibrate"
+                android:textColor="@color/text_color2" />
+
+            <com.wash.daoliu.view.UISwitchButton
+                android:id="@+id/vibrate_switch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@color/transparent"
+                android:checked="false"
+                android:textOff=""
+                android:textOn="" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/background_color1" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/sound_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:padding="10dp"
+        android:text="@string/notice_hint"
+        android:textSize="12sp"
+        android:textColor="@color/text_color1" />
+</LinearLayout>

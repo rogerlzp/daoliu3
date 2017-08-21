@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:layout_centerHorizontal="true">
+
+    <TextView
+        android:id="@+id/checkbox_agreement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/check_textview_selector"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:text="我已同意" />
+
+    <TextView
+        android:id="@+id/trust_html"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/checkbox_agreement"
+        android:gravity="center_vertical"
+        android:text="《投资协议》"
+        android:textColor="@color/recommend" />
+
+</RelativeLayout>

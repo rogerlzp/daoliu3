@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myedittext2="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loginLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="20dp">
+
+        <View
+            android:id="@+id/iv2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/divider_gray_1"></View>
+
+        <TextView
+            android:id="@+id/tv_person"
+            android:layout_width="80dp"
+            android:layout_height="49dp"
+            android:layout_below="@+id/v2"
+            android:gravity="right|center_vertical"
+            android:text="@string/bankcard_owner"
+            android:textColor="@color/label_grey1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_person_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_person"
+            android:layout_alignLeft="@+id/tv_bank_value"
+            android:layout_alignTop="@id/tv_person"
+            android:layout_toRightOf="@id/tv_person"
+            android:background="@null"
+            android:gravity="left|center"
+            android:hint="@string/input_your_name"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/text_color2"
+            android:textColorHint="@color/label_grey1"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/iv3"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tv_person_value"
+            android:background="@color/divider_gray_1"></View>
+
+        <TextView
+            android:id="@+id/tv_bank"
+            android:layout_width="80dp"
+            android:layout_height="49dp"
+            android:layout_below="@+id/iv3"
+            android:gravity="right|center_vertical"
+            android:text="@string/choose_bank"
+            android:textColor="@color/label_grey1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_bank_value"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_alignBottom="@id/tv_bank"
+            android:layout_alignTop="@id/tv_bank"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@id/tv_bank"
+            android:background="@null"
+            android:drawableRight="@drawable/icon_enter"
+            android:gravity="left|center"
+            android:hint="@string/support_card"
+            android:paddingLeft="5dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/text_color2"
+            android:textColorHint="@color/label_grey1"
+            android:textSize="16sp" />
+
+
+        <View
+            android:id="@+id/iv4"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tv_bank_value"
+            android:background="@color/divider_gray_1"></View>
+
+        <TextView
+            android:id="@+id/tv_bankcard"
+            android:layout_width="80dp"
+            android:layout_height="49dp"
+            android:layout_below="@+id/iv4"
+            android:gravity="right|center_vertical"
+            android:text="@string/card_id"
+            android:textColor="@color/label_grey1"
+            android:textSize="16sp" />
+
+        <com.wash.daoliu.view.MyEditText2
+            android:id="@+id/et_bankcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_bankcard"
+            android:layout_alignLeft="@+id/tv_bank_value"
+            android:layout_alignTop="@id/tv_bankcard"
+            android:layout_toRightOf="@id/tv_bankcard"
+            android:background="@null"
+            android:hint="@string/input_bankcard_id"
+            android:inputType="number"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/text_color2"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/iv5"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/et_bankcard"
+            android:background="@color/divider_gray_1"></View>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_bind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_radius"
+            android:enabled="false"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/btn_confirm_yes"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_bind"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/icon_note" />
+
+        <RelativeLayout
+            android:id="@+id/rl_tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_bind"
+            android:layout_marginLeft="54dp"
+            android:layout_marginRight="72dp"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/stroke_circle_black_bg" />
+
+            <TextView
+                android:id="@+id/tv_bindcard_note1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="8dp"
+                android:gravity="left"
+                android:paddingLeft="8dp"
+                android:text="@string/bindcard_note1"
+                android:textColor="@color/text_color3"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/rl_tv1"
+            android:layout_below="@+id/rl_tv1"
+            android:layout_marginRight="72dp">
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/stroke_circle_black_bg" />
+
+            <TextView
+                android:id="@+id/tv_bindcard_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="left"
+                android:paddingLeft="8dp"
+                android:text="@string/bindcard_note"
+                android:textColor="@color/text_color3"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/rl_tv"
+            android:layout_below="@+id/rl_tv"
+            android:layout_marginRight="72dp">
+
+            <ImageView
+                android:id="@+id/iv_bindcard_note2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/stroke_circle_black_bg" />
+
+            <TextView
+                android:id="@+id/tv_bindcard_note2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="left"
+                android:paddingLeft="8dp"
+                android:text="@string/bindcard_note2"
+                android:textColor="@color/text_color3"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/rl_tv2"
+            android:layout_below="@+id/rl_tv2"
+            android:layout_marginRight="72dp">
+
+            <ImageView
+                android:id="@+id/iv_bindcard_note3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/stroke_circle_black_bg" />
+
+            <TextView
+                android:id="@+id/tv_bindcard_note3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="left"
+                android:paddingLeft="8dp"
+                android:text="@string/bindcard_note3"
+                android:textColor="@color/text_color3"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_tv4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/rl_tv3"
+            android:layout_below="@+id/rl_tv3"
+            android:layout_marginRight="72dp"
+            android:layout_toRightOf="@+id/iv_note">
+
+            <ImageView
+                android:id="@+id/iv_bindcard_note4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/stroke_circle_black_bg" />
+
+            <TextView
+                android:id="@+id/tv_bindcard_note4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="left"
+                android:paddingLeft="8dp"
+                android:text="@string/bindcard_note4"
+                android:textColor="@color/text_color3"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ClearableEditText">
+        <attr name="android:textSize" />
+        <attr name="android:textColor" />
+        <attr name="android:inputType" />
+        <attr name="android:hint" />
+        <attr name="android:enabled" />
+    </declare-styleable>
+
+    <declare-styleable name="MyPwdEditText">
+        <attr name="android:textSize" />
+        <attr name="android:textColor" />
+        <attr name="android:inputType" />
+        <attr name="android:hint" />
+        <attr name="android:enabled" />
+        <attr name="pwdImageID" format="integer" />
+        <!--   图片 id -->
+        <attr name="pwdImageLeft" format="integer" />
+        <!-- 图片左边距离 单位 dp -->
+
+        <attr name="pwdTextLeft" format="integer" />
+        <!-- edittext 左边距离 单位 dp -->
+        <attr name="pwdClearRight" format="integer" />
+        <!-- clear icon 右边距离 单位 dp -->
+
+        <attr name="pwdShowImage" format="integer" />
+        <!-- show 图片 id -->
+        <attr name="pwdShowLeft" format="integer" />
+        <!-- show 图片左边距离 单位 dp -->
+
+    </declare-styleable>
+
+    <declare-styleable name="MyEditText">
+        <attr name="android:textSize" />
+        <attr name="android:textColor" />
+        <attr name="android:inputType" />
+        <attr name="android:hint" />
+        <attr name="android:enabled" />
+        <attr name="imageID" format="integer" />
+        <!-- 图片 id -->
+        <attr name="imageLeft" format="integer" />
+        <!-- 图片左边距离 单位 dp -->
+        <attr name="textLeft" format="integer" />
+        <!-- edittext 左边距离 单位 dp -->
+        <attr name="clearRight" format="integer" />
+        <!-- clear icon 右边距离 单位 dp -->
+    </declare-styleable>
+
+    <declare-styleable name="MyEditText2">
+        <attr name="android:textSize" />
+        <attr name="android:textColor" />
+        <attr name="android:inputType" />
+        <attr name="android:hint" />
+        <attr name="android:enabled" />
+        <attr name="textLeft2" format="integer" />
+        <!-- edittext 左边距离 单位 dp -->
+        <attr name="clearRight2" format="integer" />
+        <!-- clear icon 右边距离 单位 dp -->
+    </declare-styleable>
+
+
+    <declare-styleable name="AgreementCheckBox">
+        <attr name="android:checked" />
+    </declare-styleable>
+
+    <declare-styleable name="MyImageButtonWithText">
+        <attr name="mySrc" format="reference" />
+        <attr name="myText" format="string" />
+        <attr name="myTextColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ImageViewCheckBox">
+        <attr name="default_state" format="integer" />
+        <attr name="checked_bkg" format="integer" />
+        <attr name="unchecked_bkg" format="integer" />
+        <attr name="checked_disabled" format="integer" />
+    </declare-styleable>
+
+
+    <declare-styleable name="SeekArc">
+        <attr name="thumb" format="reference" />
+        <attr name="thumbOffset" format="dimension" />
+        <attr name="max" format="integer" />
+        <attr name="progressWidth" format="dimension" />
+        <attr name="arcWidth" format="dimension" />
+        <attr name="progress" format="integer" />
+        <attr name="rotation" format="integer" />
+        <attr name="startAngle" format="integer" />
+        <attr name="sweepAngle" format="integer" />
+        <attr name="arcColor" format="color" />
+        <attr name="progressColor" format="color" />
+        <attr name="roundEdges" format="boolean" />
+        <attr name="touchInside" format="boolean" />
+        <attr name="clockwise" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="SeekArcTheme">
+        <attr name="seekArcStyle" format="reference"></attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="PullToRefresh">
+
+        <!-- A drawable to use as the background of the Refreshable View -->
+        <attr name="ptrRefreshableViewBackground" format="reference|color" />
+
+        <!-- A drawable to use as the background of the Header and Footer Loading Views -->
+        <attr name="ptrHeaderBackground" format="reference|color" />
+
+        <!-- Text Color of the Header and Footer Loading Views -->
+        <attr name="ptrHeaderTextColor" format="reference|color" />
+
+        <!-- Text Color of the Header and Footer Loading Views Sub Header -->
+        <attr name="ptrHeaderSubTextColor" format="reference|color" />
+
+        <!-- Mode of Pull-to-Refresh that should be used -->
+        <attr name="ptrMode">
+            <flag name="disabled" value="0x0" />
+            <flag name="pullFromStart" value="0x1" />
+            <flag name="pullFromEnd" value="0x2" />
+            <flag name="both" value="0x3" />
+            <flag name="manualOnly" value="0x4" />
+
+            <!-- These last two are depreacted -->
+            <flag name="pullDownFromTop" value="0x1" />
+            <flag name="pullUpFromBottom" value="0x2" />
+        </attr>
+
+        <!-- Whether the Indicator overlay(s) should be used -->
+        <attr name="ptrShowIndicator" format="reference|boolean" />
+
+        <!-- Drawable to use as Loading Indicator. Changes both Header and Footer. -->
+        <attr name="ptrDrawable" format="reference" />
+
+        <!-- Drawable to use as Loading Indicator in the Header View. Overrides value set in ptrDrawable. -->
+        <attr name="ptrDrawableStart" format="reference" />
+
+        <!-- Drawable to use as Loading Indicator in the Footer View. Overrides value set in ptrDrawable. -->
+        <attr name="ptrDrawableEnd" format="reference" />
+
+        <!-- Whether Android's built-in Over Scroll should be utilised for Pull-to-Refresh. -->
+        <attr name="ptrOverScroll" format="reference|boolean" />
+
+        <!-- Base text color, typeface, size, and style for Header and Footer Loading Views -->
+        <attr name="ptrHeaderTextAppearance" format="reference" />
+
+        <!-- Base text color, typeface, size, and style for Header and Footer Loading Views Sub Header -->
+        <attr name="ptrSubHeaderTextAppearance" format="reference" />
+
+        <!-- Style of Animation should be used displayed when pulling. -->
+        <attr name="ptrAnimationStyle">
+            <flag name="rotate" value="0x0" />
+            <flag name="flip" value="0x1" />
+        </attr>
+
+        <!-- Whether the user can scroll while the View is Refreshing -->
+        <attr name="ptrScrollingWhileRefreshingEnabled" format="reference|boolean" />
+
+        <!--
+        	Whether PullToRefreshListView has it's extras enabled. This allows the user to be
+        	able to scroll while refreshing, and behaves better. It acheives this by adding
+        	Header and/or Footer Views to the ListView.
+        -->
+        <attr name="ptrListViewExtrasEnabled" format="reference|boolean" />
+
+        <!--
+        	Whether the Drawable should be continually rotated as you pull. This only
+        	takes effect when using the 'Rotate' Animation Style.
+        -->
+        <attr name="ptrRotateDrawableWhilePulling" format="reference|boolean" />
+
+        <!-- BELOW HERE ARE DEPRECEATED. DO NOT USE. -->
+        <attr name="ptrAdapterViewBackground" format="reference|color" />
+        <attr name="ptrDrawableTop" format="reference" />
+        <attr name="ptrDrawableBottom" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="SwitchButton">
+        <attr name="bmWidth" format="dimension"></attr>
+        <attr name="bmHeight" format="dimension"></attr>
+    </declare-styleable>
+    <declare-styleable name="EmptyViewStyle">
+        <attr name="emptyIconRes" format="integer" />
+        <attr name="emptyTitle" format="string" />
+        <attr name="emptyContent" format="string" />
+    </declare-styleable>
+
+
+
+    <declare-styleable name="GifView">
+        <attr name="gif" format="reference" />
+        <attr name="paused" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CustomTheme">
+        <attr name="gifViewStyle" format="reference" />
+    </declare-styleable>
+
+
+</resources>

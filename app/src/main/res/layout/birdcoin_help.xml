@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ll_call_bg"
+        android:orientation="vertical"
+        android:padding="1dp">
+
+        <!-- 退出游戏的背景图 -->
+        <TextView
+            android:id="@+id/phone_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/bird_coin"
+            android:textColor="@color/text_color2"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_bird_coin_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/nav_close" />
+
+        <View
+            android:id="@+id/iv1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/phone_text"
+            android:background="@color/background_color1" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv1"
+            android:paddingBottom="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/bird_coin_help"
+            android:textColor="@color/text_color1"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+</LinearLayout>

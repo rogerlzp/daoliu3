@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="id_insurance">false</item>
+    <item type="id" name="id_money_volume">false</item>
+    <item type="id" name="id_invite_friends">false</item>
+
+    <item type="id" name="gridview" />
+    <item type="id" name="webview" />
+    <item type="id" name="scrollview" />
+
+    <item type="id" name="recyclerview" />
+
+</resources>

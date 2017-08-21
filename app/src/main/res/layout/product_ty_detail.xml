@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_bg">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/text_bule_1">
+
+        <ImageView
+            android:id="@+id/iv_return"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:clickable="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/nav_return_white" />
+
+        <TextView
+            android:id="@+id/tv_product_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="体验标详情"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@+id/rl1"
+        android:background="@color/text_bule_1">
+
+        <RelativeLayout
+            android:id="@+id/rl3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp">
+
+            <View
+                android:id="@+id/v1"
+                android:layout_width="48dp"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/tv_product_name"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="新手体验标"
+                android:textColor="@color/white" />
+
+            <View
+                android:id="@+id/v2"
+                android:layout_width="48dp"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:layout_toLeftOf="@+id/tv_product_name"
+                android:background="@color/white" />
+        </RelativeLayout>
+
+        <com.wash.daoliu.view.ProductTagView
+            android:id="@+id/tag_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl3"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tag_view"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="44dp">
+
+
+            <TextView
+                android:id="@+id/tv_amount_income_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/white"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/tv_amount_income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_amount_income_value"
+                android:layout_below="@+id/tv_amount_income_value"
+                android:layout_marginTop="8dp"
+                android:text="年化收益率"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_amount_income_value"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/tv_amount_income_value"
+                android:text="%"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tv_deadline_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_amount_income_value"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_deatline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_deadline_value"
+                android:layout_below="@+id/tv_deadline_value"
+                android:layout_marginTop="8dp"
+                android:text="投资期限"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_deadline_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_deadline_value"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/tv_deadline_value"
+                android:text="天"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_remain_amount_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_amount_income_value"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="2dp"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_remain_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_remain_amount_value"
+                android:layout_marginTop="8dp"
+                android:text="体验金券"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl5"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/rl2"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_profit_type_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:text="一次性付款"
+            android:textColor="@color/text_color1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_profit_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_profit_type_value"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="8dp"
+            android:text="收益方式 (以鸟币形式返还)"
+            android:textColor="@color/text_color1"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/iv_birdcoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_profit_type"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/tv_profit_type"
+            android:background="@drawable/icon_help" />
+
+        <TextView
+            android:id="@+id/tv_st_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_profit_type"
+            android:layout_marginLeft="24dp"
+            android:layout_toRightOf="@+id/iv_birdcoin"
+            android:text="起息日期"
+            android:textColor="@color/text_color1"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_st_date_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_profit_type_value"
+            android:layout_alignLeft="@+id/tv_st_date"
+            android:layout_toRightOf="@+id/tv_profit_type_value"
+            android:text="T+1 天"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/v3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="16dp"
+            android:background="@color/background_color1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl5"
+        android:layout_marginBottom="22dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_know_tyb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="16dp"
+            android:text="了解体验标"
+            android:textColor="@color/text_color1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_tyb_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_know_tyb"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="16dp"
+            android:text="体验标是领投鸟为了使新注册的更快捷的了解平台的投资流程,而打造的虚拟理财产品.投入当日即计息,到期以鸟币形式付息,是体验投资P2P的理想选择."
+            android:textColor="@color/text_color1"
+            android:textSize="16sp" />
+
+
+        <View
+            android:id="@+id/v4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_tyb_desc"
+            android:layout_marginTop="22dp"
+            android:background="@color/background_color1" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/rl6"
+        android:background="@color/normal_bg">
+
+        <Button
+            android:id="@+id/btn_buy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/main_text_s_color"
+            android:text="立即体验"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/ll6"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:visibility="gone">
+
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_radius"
+                android:text="登录"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_radius"
+                android:text="注册"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

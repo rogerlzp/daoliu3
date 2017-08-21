@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color1"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/background_color1" />
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_plate"
+            android:layout_width="120dp"
+            android:layout_height="49dp"
+            android:gravity="center"
+            android:text="车牌号码"
+            android:textColor="@color/text_color3"
+            android:textSize="16sp" />
+
+        <com.wash.daoliu.view.MyEditText2
+            android:id="@+id/et_plate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_plate"
+            android:layout_alignTop="@id/tv_plate"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/tv_plate"
+            android:background="@null"
+            android:gravity="left|center"
+            android:hint="请输入车牌号码"
+            android:textColor="@color/text_color2"
+            android:textSize="16sp"></com.wash.daoliu.view.MyEditText2>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv_plate"
+        android:background="#E2E2E2" />
+
+    <RelativeLayout
+
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_brandtype"
+            android:layout_width="120dp"
+            android:layout_height="49dp"
+            android:gravity="center"
+            android:text="车辆型号"
+            android:textColor="@color/text_color3"
+            android:textSize="16sp" />
+
+        <com.wash.daoliu.view.MyEditText2
+            android:id="@+id/et_brandtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_brandtype"
+            android:layout_alignTop="@id/tv_brandtype"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/tv_brandtype"
+            android:background="@null"
+            android:gravity="left|center"
+            android:hint="请输入车牌型号"
+            android:textColor="@color/text_color2"
+            android:textSize="16sp"></com.wash.daoliu.view.MyEditText2>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/et_brandtype"
+        android:background="#E2E2E2" />
+
+    <RelativeLayout
+        android:id="@+id/rl3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_color"
+            android:layout_width="120dp"
+            android:layout_height="49dp"
+            android:gravity="center"
+            android:text="车辆型号"
+            android:textColor="@color/text_color3"
+            android:textSize="16sp" />
+
+        <com.wash.daoliu.view.MyEditText2
+            android:id="@+id/et_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_color"
+            android:layout_alignTop="@id/tv_color"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/tv_color"
+            android:background="@null"
+            android:gravity="left|center"
+            android:hint="请输入车牌型号"
+            android:textColor="@color/text_color2"
+            android:textSize="16sp"></com.wash.daoliu.view.MyEditText2>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_radius"
+        android:enabled="false"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

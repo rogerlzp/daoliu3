@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myedittext2="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loginLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/background_color1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="为了确保您的资金安全,请先开通第三方资金托管账户"
+        android:textColor="@color/text_color3"
+        android:textSize="12sp" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_realname"
+            android:layout_width="120dp"
+
+            android:layout_height="49dp"
+            android:gravity="center"
+            android:text="真实姓名"
+            android:textColor="@color/text_color3"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/et_realname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_realname"
+            android:layout_alignTop="@id/tv_realname"
+            android:layout_toRightOf="@id/tv_realname"
+            android:background="@null"
+            android:gravity="left|center"
+            android:hint="请输入真实姓名"
+            android:textColor="@color/text_color2"></TextView>
+
+
+        <View
+            android:id="@+id/v1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_realname"
+            android:background="#E2E2E2" />
+
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="120dp"
+            android:layout_height="49dp"
+            android:layout_below="@+id/v1"
+            android:gravity="center"
+            android:text="身份证号"
+            android:textColor="@color/text_color3"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/et_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_id"
+            android:layout_alignTop="@id/tv_id"
+            android:layout_toRightOf="@id/tv_id"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="请输入您的身份证号"
+            android:textColor="@color/text_color2"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/v3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/et_id"
+            android:background="#E2E2E2" />
+    </RelativeLayout>
+
+
+</LinearLayout>

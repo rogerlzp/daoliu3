@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loginLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <include
+        android:id="@+id/lay1"
+        layout="@layout/action_bar_title" />
+
+    <View
+        android:id="@+id/v3"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/lay1"
+        android:background="@color/background_color1" />
+
+    <!--com.wash.washcar.view.BannerView
+        android:id="@+id/id_viewflow"
+        android:layout_width="match_parent"
+        android:layout_height="49dp" /-->
+    <ImageView
+        android:id="@+id/placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="89dp"
+        android:layout_below="@+id/v3"
+        android:src="@drawable/logo" />
+
+    <View
+        android:id="@+id/v4"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/placeholder"
+        android:background="@color/background_color1" />
+
+    <RelativeLayout
+        android:id="@+id/rl_shop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/placeholder"
+        android:layout_marginTop="10dp"
+        android:background="@color/white">
+
+
+        <TextView
+            android:id="@+id/tv_shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="38dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="徐汇汽车"
+            android:textSize="20sp" />
+
+        <RatingBar
+            android:id="@+id/rb_rating"
+            style="@style/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_shop_name"
+            android:layout_marginLeft="38dp"
+            android:rating="3.5" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_shop"
+        android:layout_marginTop="10dp"
+        android:background="@color/white">
+
+
+        <ImageView
+            android:id="@+id/iv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="11dp"
+            android:background="@drawable/icon_ticket" />
+
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:layout_toRightOf="@+id/iv_status"
+            android:gravity="left|center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="正在洗车数:2个；正在排队数：3个\n预计等待时间:2小时"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_reserve"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_red_bg"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="预约" />
+
+        <View
+            android:id="@+id/v2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="48dp"
+            android:background="#E2E2E2"
+            android:orientation="vertical" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/address_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_status"
+        android:layout_marginTop="10dp"
+        android:background="@color/white">
+
+
+        <ImageView
+            android:id="@+id/iv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="11dp"
+            android:background="@drawable/icon_ticket" />
+
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:layout_toRightOf="@+id/iv_address"
+            android:gravity="left|center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="上海市杨浦区控江路281号一层"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:drawableRight="@drawable/icon_enter"
+            android:gravity="left|center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="500m"
+            android:textSize="16sp" />
+
+
+        <View
+            android:id="@+id/v1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="48dp"
+            android:background="#E2E2E2"
+            android:orientation="vertical" />
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_shopservice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address_layout">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/rl_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/address_layout"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/label1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lv_comments"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="门店评论" />
+
+        <TextView
+            android:id="@+id/tv_comment_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lv_comments"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/icon_enter"
+            android:gravity="center"
+            android:text="287条" />
+
+
+        <com.wash.daoliu.library.PullToRefreshListView
+            android:id="@+id/lv_comments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_load_comments"
+            android:layout_marginTop="10dp"
+            android:cacheColorHint="#d3d7d4"
+            android:fadingEdge="none"
+            android:orientation="vertical"
+            ptr:ptrAnimationStyle="flip"
+            ptr:ptrMode="both" />
+
+
+        <TextView
+            android:id="@+id/tv_load_comments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="加载更多评论" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

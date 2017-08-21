@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title" />
+
+
+    <!--RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white"
+        android:contentDescription=""
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="23dp"
+            android:layout_marginTop="26dp"
+            android:gravity="center|right"
+            android:text="@string/loan_amount"
+            android:textColor="@color/text_gray_3"
+            android:textSize="13sp" />
+
+
+        <TextView
+            android:id="@+id/nsp_loan_amount"
+            android:layout_width="101dp"
+            android:layout_height="29dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="18dp"
+            android:layout_toRightOf="@+id/tv1"
+            android:background="@drawable/button_radius_spinner"
+            android:drawableRight="@drawable/icon_direct"
+            android:gravity="center"
+            android:paddingRight="8dp"
+            android:text="@string/loan_range_hint"
+            android:textColor="@color/text_gray_3" />
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="23dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="26dp"
+            android:layout_toLeftOf="@+id/nsp_loan_date"
+            android:gravity="center|right"
+            android:text="@string/loan_date"
+            android:textColor="@color/text_gray_3"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/nsp_loan_date"
+            android:layout_width="101dp"
+            android:layout_height="29dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/button_radius_spinner"
+            android:drawableRight="@drawable/icon_direct"
+            android:gravity="center"
+            android:paddingRight="8dp"
+            android:text="@string/loan_date_hint"
+            android:textColor="@color/text_gray_3"
+            android:textSize="13sp" />
+
+    </RelativeLayout-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="9dp"
+        android:paddingTop="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:orientation="horizontal"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp">
+
+            <Button
+                android:id="@+id/btn_renqi"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_radius_3c"
+                android:text="@string/renqi"
+                android:textColor="@color/button_text2"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_dae"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="47dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_radius_3c"
+                android:text="@string/dae"
+                android:textColor="@color/button_text2"
+
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_jsxk"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="47dp"
+                android:layout_weight="1"
+
+                android:background="@drawable/button_radius_3c"
+                android:text="@string/jsxk"
+                android:textColor="@color/button_text2"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp">
+
+            <Button
+                android:id="@+id/btn_bczx"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_radius_3c"
+                android:text="@string/bczx"
+
+                android:textColor="@color/button_text2"
+                android:textSize="15sp" />
+
+
+            <Button
+                android:id="@+id/btn_zyzy"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="47dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_radius_3c"
+                android:text="@string/zyzy"
+
+                android:textColor="@color/button_text2"
+
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_all"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="47dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_radius_3c"
+
+                android:text="@string/all"
+                android:textColor="@color/button_text2"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <com.wash.daoliu.library.PullToRefreshListView
+        android:id="@+id/lv_products"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0.5dp"
+        android:orientation="vertical"
+        ptr:ptrAnimationStyle="flip" />
+
+</LinearLayout>

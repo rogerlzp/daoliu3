@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ll_call_bg"
+        android:orientation="vertical"
+        android:padding="1dp">
+        <TextView
+            android:id="@+id/warn_text"
+            android:layout_width="match_parent"
+            android:textColor="@color/text_color2"
+            android:gravity="center"
+            android:padding="15dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:id="@+id/divide"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/warn_text"
+            android:background="@color/background_color1"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_below="@+id/warn_text"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/recommend"
+            android:text="@string/cancel"
+            android:layout_height="wrap_content" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:background="@color/background_color1"
+                android:layout_gravity="center_vertical"
+                />
+        <TextView
+            android:id="@+id/ok"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="center"
+            android:textColor="@color/recommend"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

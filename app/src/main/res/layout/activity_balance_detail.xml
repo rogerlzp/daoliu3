@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:emptyviewstyle="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/background_color1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <com.wash.daoliu.library.PullToRefreshScrollView
+            android:id="@+id/balance_list_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="15dp"
+            emptyviewstyle:ptrAnimationStyle="flip">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/background_color1" />
+
+                <com.wash.daoliu.view.MyListView
+                    android:id="@+id/balance_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:divider="@color/background_color1"
+                    android:dividerHeight="0.5dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/background_color1" />
+            </LinearLayout>
+        </com.wash.daoliu.library.PullToRefreshScrollView>
+
+        <com.wash.daoliu.view.EmptyView
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            emptyviewstyle:emptyContent="@string/bird_empty_content"
+            emptyviewstyle:emptyIconRes="@drawable/icon_nothing_net"
+            emptyviewstyle:emptyTitle="@string/bird_empty_title" />
+    </RelativeLayout>
+</LinearLayout>

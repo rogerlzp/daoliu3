@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:my="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_bg"
+    android:orientation="vertical">
+    <!-- 这个布局决定了标签在上面还是在下面显示 -->
+    <FrameLayout
+        android:id="@+id/lay_content_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bottom" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="@color/bg_act" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <com.wash.daoliu.view.MyImageButtonWithText
+                android:id="@+id/id_home"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:orientation="vertical"
+                my:mySrc="@drawable/tab_home_normal"
+                my:myText="@string/tab_main"
+                my:myTextColor="@color/text_gray_6" />
+
+            <com.wash.daoliu.view.MyImageButtonWithText
+                android:id="@+id/id_workorder"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                my:mySrc="@drawable/tab_list_normal"
+                my:myText="@string/tab_investiment"
+                my:myTextColor="@color/text_gray_6" />
+
+            <com.wash.daoliu.view.MyImageButtonWithText
+                android:id="@+id/id_scan"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                my:mySrc="@drawable/tab_account_normal"
+                my:myText="@string/tab_account"
+                my:myTextColor="@color/text_gray_6" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myedittext2="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loginLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/white">
+
+        <View
+            android:id="@+id/iv2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/divider_gray_1"></View>
+
+        <TextView
+            android:id="@+id/tv_person"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_below="@+id/v2"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:layout_alignRight="@+id/tv_deposit_nopwd"
+            android:text="@string/bankcard_owner"
+            android:textColor="@color/text_color2"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_person_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_person"
+            android:layout_alignLeft="@+id/tv_bank_value"
+            android:layout_alignTop="@id/tv_person"
+            android:layout_toRightOf="@id/tv_person"
+            android:background="@null"
+            android:gravity="left|center"
+            android:textColor="@color/text_color1"
+            android:textColorHint="@color/label_grey1"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/iv3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_person_value"
+            android:background="@color/divider_gray_1"></View>
+
+        <TextView
+            android:id="@+id/tv_bank"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_below="@+id/iv3"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:layout_alignRight="@+id/tv_deposit_nopwd"
+            android:text="@string/bank"
+            android:textColor="@color/text_color2"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_bank_value"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_alignBottom="@id/tv_bank"
+            android:layout_alignTop="@id/tv_bank"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/tv_bank"
+            android:background="@null"
+            android:gravity="left|center"
+            android:textColor="@color/text_color1"
+            android:textColorHint="@color/label_grey1"
+            android:textSize="16sp" />
+
+
+        <View
+            android:id="@+id/iv4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_bank_value"
+            android:background="@color/divider_gray_1"></View>
+
+        <TextView
+            android:id="@+id/tv_bankcard"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_below="@+id/iv4"
+            android:layout_alignRight="@+id/tv_deposit_nopwd"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/card_id"
+            android:textColor="@color/text_color2"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/et_bankcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_bankcard"
+            android:layout_alignLeft="@+id/tv_bank_value"
+            android:layout_alignTop="@id/tv_bankcard"
+            android:layout_toRightOf="@id/tv_bankcard"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_color1"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/iv5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/et_bankcard"
+            android:background="@color/divider_gray_1"></View>
+
+        <TextView
+            android:id="@+id/tv_deposit_nopwd"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:layout_below="@+id/iv5"
+            android:paddingLeft="10dp"
+            android:gravity="left|center"
+            android:text="@string/deposit_nopwd"
+            android:textColor="@color/text_color2"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_deposit_nopwd_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_deposit_nopwd"
+            android:layout_alignLeft="@+id/tv_bank_value"
+            android:layout_alignTop="@id/tv_deposit_nopwd"
+            android:layout_toLeftOf="@+id/opreate_deposit_nopwd"
+            android:layout_toRightOf="@id/tv_deposit_nopwd"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_color1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/opreate_deposit_nopwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_deposit_nopwd"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/tv_deposit_nopwd"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/recommend"
+            android:textSize="16sp" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_change_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="right"
+        android:text="@string/change_card"
+        android:textColor="@color/button_yellow_1"
+        android:textSize="16sp" />
+
+</LinearLayout>

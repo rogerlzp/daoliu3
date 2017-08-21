@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/zhengpingli/Desktop/work/StudioProjects/daoliu/app/libs/httpmime-4.1.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e70d34d98f7f7f3b2b92105b9f2fe2a7a7184461">
+        <dex dex="/Users/zhengpingli/Desktop/work/StudioProjects/daoliu/app/build/intermediates/pre-dexed/release/httpmime-4.1.3_b6f0c81b877cd14360c4e4c9f8dfad85c9cc9665.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/zhengpingli/Desktop/work/StudioProjects/daoliu/app/libs/umeng_social_tool.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="87ef211d4ef0c257c7d040fbaa411832330eb9aa">
+        <dex dex="/Users/zhengpingli/Desktop/work/StudioProjects/daoliu/app/build/intermediates/pre-dexed/release/umeng_social_tool_076d96d1f9db3dbc117fa172e742068c897829b3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/zhengpingli/Desktop/work/StudioProjects/daoliu/app/libs/SocialSDK_sms.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c3ee14771576fa59d86d12096c2f568a05ab76ab">
+        <dex dex="/Users/zhengpingli/Desktop/work/StudioProjects/daoliu/app/build/intermediates/pre-dexed/release/SocialSDK_sms_1e8aa16433265ffdecb8324f65972d88e0e148af.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/zhengpingli/Desktop/work/StudioProjects/daoliu/app/libs/umeng_social_shareboard.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c698121d485cc1cd502ff8fad5e4e71f72ad1e9b">
+        <dex dex="/Users/zhengpingli/Desktop/work/StudioProjects/daoliu/app/build/intermediates/pre-dexed/release/umeng_social_shareboard_5def5ec407b10b1ccdf9fe03bef396cbf88d4eac.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/zhengpingli/Desktop/work/StudioProjects/daoliu/app/libs/SocialSDK_WeiXin_Full.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fb2f0934928d899d70eab7d83049c60183db7382">
+        <dex dex="/Users/zhengpingli/Desktop/work/StudioProjects/daoliu/app/build/intermediates/pre-dexed/release/SocialSDK_WeiXin_Full_0503897c153bbcd15e4c0ca079122cf3d38312b0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/zhengpingli/Desktop/work/StudioProjects/daoliu/app/libs/umeng_shareboard_widget.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4b1a59e4c996ee354c2db160f4b1ad3b0e94aab5">
+        <dex dex="/Users/zhengpingli/Desktop/work/StudioProjects/daoliu/app/build/intermediates/pre-dexed/release/umeng_shareboard_widget_f7aa7e355d4f7bffd20178bb2ee4fa008628840e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/zhengpingli/Desktop/work/StudioProjects/daoliu/app/libs/wechat-sdk-android-with-mta-1.1.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="379056fcb09a02bd0db722be359695ad88beb04d">
+        <dex dex="/Users/zhengpingli/Desktop/work/StudioProjects/daoliu/app/build/intermediates/pre-dexed/release/wechat-sdk-android-with-mta-1.1.6_a4cc1f08be14bb618abe52b5faa003294721d57f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/zhengpingli/Desktop/work/StudioProjects/daoliu/app/libs/SocialSDK_QQ_Full.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e2ae97492c5df69f97a9760a3558848821b525cc">
+        <dex dex="/Users/zhengpingli/Desktop/work/StudioProjects/daoliu/app/build/intermediates/pre-dexed/release/SocialSDK_QQ_Full_ba0ef94878cd2349f665c394b049c330af0480e6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/zhengpingli/Desktop/work/StudioProjects/daoliu/app/libs/umeng_social_api.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="55a810a3647e7324408cb9ca3c64d7c7bfc8f138">
+        <dex dex="/Users/zhengpingli/Desktop/work/StudioProjects/daoliu/app/build/intermediates/pre-dexed/release/umeng_social_api_71bf4e199a842b9a5e2fee52597014523c62521a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/zhengpingli/Desktop/work/StudioProjects/daoliu/app/libs/bolts-android-1.1.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="129874135e6081269ace2312092031558865de12">
+        <dex dex="/Users/zhengpingli/Desktop/work/StudioProjects/daoliu/app/build/intermediates/pre-dexed/release/bolts-android-1.1.4_31a8aa1395963a7ee5c6e3067d4c26be9a3cb44b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/zhengpingli/Desktop/work/StudioProjects/daoliu/app/libs/SaaS_AppAnalytics_Android_SDK_V4.0.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4e8c3bd4370e8cede286fd5b4d75feb477b51661">
+        <dex dex="/Users/zhengpingli/Desktop/work/StudioProjects/daoliu/app/build/intermediates/pre-dexed/release/SaaS_AppAnalytics_Android_SDK_V4.0.3_eb89552e81caf5bc6261843b83901f7ecc5de917.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/zhengpingli/Desktop/work/StudioProjects/daoliu/app/libs/mta-sdk-1.6.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c184c69f43b1fe46390f7123717c65bd844bccb6">
+        <dex dex="/Users/zhengpingli/Desktop/work/StudioProjects/daoliu/app/build/intermediates/pre-dexed/release/mta-sdk-1.6.2_73bccf63356a1cf0b730264283192ab953e41b37.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/zhengpingli/Desktop/work/StudioProjects/daoliu/app/libs/SocialSDK_QQ_Simplify.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6739b2dd368e2855c24528249dae9fbe14e7f09b">
+        <dex dex="/Users/zhengpingli/Desktop/work/StudioProjects/daoliu/app/build/intermediates/pre-dexed/release/SocialSDK_QQ_Simplify_76eaed7660fbc49ecb8c51898d35871fedab27cf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/zhengpingli/Desktop/work/StudioProjects/daoliu/app/libs/open_sdk_r5781.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="cbac7d081542657d885efd7a529a9267d22ec080">
+        <dex dex="/Users/zhengpingli/Desktop/work/StudioProjects/daoliu/app/build/intermediates/pre-dexed/release/open_sdk_r5781_479ecda286582a179648d73e21303a6c36478477.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/zhengpingli/Desktop/work/StudioProjects/daoliu/app/libs/umeng_social_net.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="09a14799b9e09cb72bd2d0346f13dec601a71f6c">
+        <dex dex="/Users/zhengpingli/Desktop/work/StudioProjects/daoliu/app/build/intermediates/pre-dexed/release/umeng_social_net_22cf6e2bb7a82bfa57f827c6b590b5734e671cc9.jar" />
+    </item>
+
+</items>

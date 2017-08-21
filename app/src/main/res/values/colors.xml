@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- theme -->
+    <color name="all_pages_background">#eeeeee</color>
+    <color name="actionbar_bg">#e94b4a</color>
+    <color name="actionbar_txt_white">#FFFFFF</color>
+    <color name="repost_bgcolor">#f5f5f5</color>
+    <color name="fans_orange">#eb9e71</color>
+    <color name="fans_red">#e94b4a</color>
+    <color name="fans_yellow">#fccb56</color>
+    <color name="fans_gray">#C2C0C0</color>
+    <color name="loading_text_color">#ff666666</color>
+    <color name="transparent75">#3d3d3d</color>
+    <color name="transparent">#00000000</color>
+    <drawable name="transparent">#00000000</drawable>
+    <drawable name="alpha80">#00000000</drawable>
+    <drawable name="divide_drawable">#E2E2E2</drawable>
+    <drawable name="divide_normal">#f9f9f9</drawable>
+    <color name="hit_egg_bg">#9D9898</color>
+
+    <color name="red_selected">#ea3730</color>
+    <color name="red_unselected">#ea5749</color>
+    <color name="red_unable">#f4a58d</color>
+
+    <color name="my_black_line">#ebece9</color>
+
+    <color name="colorAccent">#ea3730</color>
+
+    <color name="colorPrimary">#ea3730</color>
+
+    <color name="colorPrimaryDark">#ea3730</color>
+
+    <color name="alpha_60_black">#99000000</color>
+    <color name="alpha_20_black">#33000000</color>
+
+    <color name="label_grey1">#CCCCCC</color>
+
+    <color name="recommend">#0090ff</color>
+    <color name="white">#FFFFFF</color>
+    <color name="button_color">#EA5504</color>
+    <color name="yellow_color1">#FFF5A0</color>
+    <color name="red_color1">#F65544</color>
+    <color name="keyboard_bg">#F0EFF4</color>
+    <color name="key_text_color">#5E5E5E</color>
+
+    <color name="main_yellow_color">#FDD85F</color>
+
+
+    <color name="main_yellow_color2">#FDD952</color>
+
+    <color name="background_color1">#E2E2E2</color>
+    <color name="normal_bg">#f9f9f9</color>
+    <color name="background_yellow_color1">#FFFDE4</color>
+    <color name="text_color1">#6A6A6A</color>
+    <color name="text_color2">#3a3a3a</color>
+    <color name="text_color3">#8A8A8A</color>
+
+    <color name="title_color1">#494949</color>
+    <!-- bobo edit -->
+    <color name="main_bg">#f1f1f1</color>
+    <color name="bg_act">#dddddd</color>
+    <color name="mian_bottom_color">#F8F8F8</color>
+    <color name="main_text_s_color">#EA5504</color>
+    <color name="msg_point_color_bg">#E71818</color>
+    <color name="gray_1">#808080</color>
+    <color name="seekarc_progress_gray">#FFD8D8D8</color>
+    <color name="main_x_color">#FD605E</color>
+    <color name="index_tip_color">#008FFE</color>
+
+    <color name="home_circle_bg_1">#00BC65</color>
+    <color name="home_circle_bg_11">#1BA449</color>
+    <color name="home_circle_bg_2">#FC615C</color>
+    <color name="home_circle_bg_22">#FD4A5E</color>
+    <color name="home_circle_bg_3">#00ACF9</color>
+    <color name="home_circle_bg_33">#008FFE</color>
+
+    <color name="text_gray_1">#c1c1c1</color>
+    <color name="text_gray_3">#333333</color>
+    <color name="text_gray_6">#666666</color>
+    <color name="text_gray_9">#999999</color>
+    <color name="text_gray_f9">#F9F9F9</color>
+
+    <color name="divider_gray_1">#E2E2E2</color>
+    <color name="divider_yello_1">#FAECCE</color>
+
+    <!-- 标的-->
+    <color name="text_bule_1">#4294FF</color>
+    <color name="background_color_tab">#F5F5F5</color>
+    <color name="background_color_F7">#F7F7F7</color>
+    <color name="background_color4">#FCFCFC</color>
+
+    <!--button-->
+    <color name="button_yellow_1">#EF7600</color>
+    <color name="black">#000000</color>
+    <color name="tab_color">#EA5504</color>
+    <drawable name="transparent_background">#00000000</drawable>
+
+    <color name="yellow_1">#FFC000</color>
+    <color name="tag_xs_color">#E86967</color>
+    <color name="tag_xc_color">#66E2D3</color>
+    <color name="tag_kz_color">#4DBA62</color>
+    <color name="tag_xe_color">#FFAF00</color>
+
+    <color name="yellow_color_detail">#F6A623</color>
+
+
+</resources>

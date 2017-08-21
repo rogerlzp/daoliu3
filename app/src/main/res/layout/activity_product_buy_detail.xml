@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/background_color1" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.wash.daoliu.view.EmptyView
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            ptr:emptyContent="@string/invest_empty_content"
+            ptr:emptyIconRes="@drawable/icon_nothing_investment"
+            ptr:emptyTitle="@string/empty_data" />
+
+    <com.wash.daoliu.library.PullToRefreshScrollView
+        android:id="@+id/pull_to_refresh_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        ptr:ptrAnimationStyle="flip"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="3"
+                android:paddingLeft="10dp"
+                android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/buy_count"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_weight="1"
+                android:paddingTop="15dp"
+                android:textColor="@color/text_color1"
+                android:textSize="15sp" />
+            </LinearLayout>
+            <com.wash.daoliu.view.MyListView
+                android:id="@+id/buy_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ll_coner_blue" />
+        </LinearLayout>
+
+    </com.wash.daoliu.library.PullToRefreshScrollView>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- common -->
+    <string name="btn_confirm">确定</string>
+    <string name="btn_ignore">不再提醒</string>
+    <string name="btn_confirm_yes">确认</string>
+    <string name="btn_pay">付款</string>
+    <string name="btn_clear">清空</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_delete">删除</string>
+    <string name="btn_modify">修改</string>
+    <string name="btn_send">发送</string>
+    <string name="dialog_call_service_text">您将拨打客服电话\n%s"</string>
+    <string name="dialog_call_service_title">温馨提示</string>
+    <string name="app_name">神马贷款</string>
+    <string name="app_name2">神马贷款</string>
+    <string name="action_settings">设置</string>
+    <string name="submit">提交</string>
+    <string name="install">安装</string>
+    <string name="downloading">下载中</string>
+    <string name="downloaded">下载完成</string>
+    <string name="immediately_opened">立即开通\t></string>
+    <string name="immediately_opened_2">立即开通</string>
+    <string name="relieve">解除\t></string>
+    <string name="relieve_2">解除</string>
+    <string name="opened">已开通</string>
+    <string name="unopen">未开通</string>
+    <string name="net_error">网络不可用，请检查你的网络设置</string>
+    <string name="notice_off_hint">若关闭，您将收不到神马贷款给您发送的消息通知</string>
+    <string name="notice_hint">您可以设置接收到消息通知是否需要声音和振动提醒</string>
+
+
+    <!-- 登录页面 begin.... -->
+    <string name="ERROR_PIC_CODE">获取图片验证码错误,请重试</string>
+    <!-- 登录页面 end....   -->
+
+
+    <string name="tab_main">首页</string>
+    <string name="tab_investiment">贷款</string>
+    <string name="tab_account">我的</string>
+    <string name="tab_more">关于我们</string>
+    <string name="back_more_quit">再按一次返回键退出程序</string>
+    <string name="new_password_hint">请输入密码</string>
+    <string name="new_password_again_hint">请再次输入密码</string>
+    <string name="password_hint">请输入修改密码</string>
+    <string name="password_again_hint">请再次输入修改密码</string>
+    <string name="login_label_signin">登录</string>
+    <string name="login_label_register">注册</string>
+    <string name="forgotten_password">忘记密码?</string>
+    <string name="get_password">找回密码</string>
+    <string name="modify_password">密码修改</string>
+    <string name="verifycode_hint">请输入4位验证码</string>
+    <string name="register">注册</string>
+    <string name="next">下一步</string>
+    <string name="user_auth_now">立即认证</string>
+    <string name="realname_text">您未完成用户实名认证，为了您的资金安全，请进行认证!</string>
+    <string name="bindbank_text">您未完成银行卡绑定，绑定银行卡后方可进行充值投资，要不绑一张试试？</string>
+    <string name="complete_register">完成注册</string>
+    <string name="mobile_number_hint">请输入手机号</string>
+    <string name="get_verify_code">获取验证码</string>
+    <string name="reget_verify_code">重新获取</string>
+    <string name="login_first">请先登录</string>
+
+    <string name="mobile_num">手机号</string>
+    <string name="mobile_number_forgetpwd_hint">请输入您的手机号</string>
+    <string name="identity_card">身份证号</string>
+    <string name="idcard_hint">请输入身份证号</string>
+    <string name="captcha">验证码</string>
+    <string name="reset_trand_passwpord_error">需要实名认证才能更改支付密码</string>
+
+    <string name="get_correct_mobile">请输入正确的手机号码</string>
+    <string name="get_correct_password">请输入至少6位密码</string>
+    <string name="get_correct_verifycode">请输入正确验证码</string>
+
+    <string name="modify_password1">请输入6~18位新密码</string>
+    <string name="modify_password2">请再次输入新密码</string>
+    <string name="confirm_modify">确认修改</string>
+
+    <string name="get_correct_idcard">请输入正确身份证号</string>
+    <string name="recomment_code">请输入推荐人手机号</string>
+
+    <string name="modifyPwd">修改密码</string>
+    <string name="password_not_match">两次密码不一致，请重新输入</string>
+
+    <string name="have_recommend">我有推荐人</string>
+
+    <string name="read_agreement">我已阅读并同意</string>
+    <string name="niaoren_agreement">《在线服务协议》</string>
+    <string name="password_info1">密码应该为6-18位英文字母与数字的组合 </string>
+    <string name="password_info2">如有推荐人，请输入推荐人手机号。</string>
+
+    <string name="resendable_after_seconds">秒后重试</string>
+
+    <!-- 注册开始 -->
+    <string name="register_success_note">恭喜您注册成功，现在去绑卡，送88元金额</string>
+
+    <!-- 注册结束 -->
+
+
+    <!-- 错误码开始 -->
+    <string name="ERROR_CODE_A0001">图片验证码错误，请刷新图片验证码后重试</string>
+    <string name="ERROR_CODE_1">错误，请稍后重试</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!-- 错误码开始 -->
+
+
+    <string name="text_insurance">安全保障</string>
+    <string name="text_money_volume">洗车券</string>
+    <string name="text_invite_friends">邀请好友</string>
+    <string name="my_friends">合伙人</string>
+
+    <!-- PULL_TO_REFRESH_listview start -->
+    <string name="pull_to_refresh_tap_label">点击刷新</string>
+    <string name="pull_to_refresh_pull_label">下拉可以刷新...</string>
+    <string name="pull_to_refresh_release_label">松开可以刷新...</string>
+    <string name="pull_to_refresh_refreshing_label">数据加载中...</string>
+    <!-- PULL_TO_REFRESH_listview end -->
+
+    <!-- 我要理财列表 start -->
+    <string name="annual_income">年化收益率</string>
+    <string name="invest_date">投资期限</string>
+    <string name="remaining_amount">剩余金额</string>
+    <string name="newbie_product">新手体验标</string>
+    <string name="newbie_coupon">体验金券购买</string>
+    <string name="product_tag1">新手</string>
+    <string name="product_tag2">体验</string>
+    <!-- PULL_TO_REFRESH_listview end -->
+
+    <!-- 手势密码 start -->
+    <string name="forget_gesture_code">忘记手势密码</string>
+    <string name="reset_gesture_code">重设手势密码</string>
+    <string name="set_gesture_pattern">设置手势密码</string>
+    <string name="wrong_gesture_pattern">两次密码不同,请重新设置</string>
+    <string name="modify_gesture">修改手势密码</string>
+    <string name="modify_gesture_original">请绘制原手势密码</string>
+    <string name="modify_gesture_new">请绘制新手势密码</string>
+
+    <string name="unlock_gesture">手势解锁</string>
+    <string name="unlock_gesture_welcome">欢迎回来,请绘制手势密码</string>
+
+    <string name="setup_gesture_code">设置手势密码</string>
+
+    <string name="set_gesture_pattern_reason">set_gesture_pattern_reason</string>
+    <string name="hint">提示</string>
+    <string name="open_deposit_pwd_hint">开通免密充值后，下次充值将不再需要输入支付密码。您也可以随时解除\n是否立即开通？</string>
+    <string name="relieve_deposit_pwd_hint">解除免密充值后，每次充值都将需要输入支付密码。解除后您也可以以后再次开通。\n是否解除？</string>
+
+    <string name="feedback_hint">如您的问题要马上反馈，请联系公众号 “神马贷款” </string>
+
+
+    <!-- 手势密码 end -->
+
+    <!-- umeng 分享 -->
+    <string name="umeng_share">分享</string>
+    <string name="umeng_auth">授权</string>
+    <string name="umeng_deleauth">清除对应授权</string>
+    <string name="umeng_shake">摇一摇</string>
+    <string name="umeng_comment">评论相关</string>
+    <string name="umeng_openshare">打开分享面板</string>
+
+    <string name="umeng_share1">默认分享面板可编辑分享页</string>
+    <string name="umeng_share2">自定义分享面板可编辑分享页</string>
+    <string name="umeng_share3">单平台直接分享</string>
+    <string name="umeng_share4">多平台直接分享</string>
+    <string name="umeng_share5">默认分享面板可编辑分享页多平台</string>
+
+    <string name="umeng_shakeshotscreen">摇一摇截屏</string>
+    <string name="umeng_shakeshare">摇一摇分享</string>
+    <string name="umeng_registershake">注册摇一摇</string>
+
+    <string name="umeng_comment1">用户信息</string>
+    <string name="umeng_comment2">本地登陆</string>
+    <string name="umeng_comment3">本地授权</string>
+    <string name="umeng_comment4">好友功能</string>
+    <string name="umeng_comment5">评论功能</string>
+    <string name="umeng_comment6">注销</string>
+    <string name="umeng_comment7">解决事例</string>
+
+    <string name="umeng_nativequery">本地登陆信息查询</string>
+    <string name="umeng_loginsina">登陆新浪</string>
+    <string name="umeng_logoutsina">登出新浪</string>
+    <string name="umeng_loginqq">登陆QQ</string>
+    <string name="umeng_logoutqq">登出QQ</string>
+    <string name="umeng_loginqzone">登陆QQ空间</string>
+    <string name="umeng_logoutzone">登出QQ空间</string>
+    <string name="umeng_customlogin">自定义登陆</string>
+
+    <string name="umeng_addfriend">添加好友</string>
+    <string name="umeng_getfriendlist">获取好友列表</string>
+
+    <string name="umeng_commentmodular">评论模块</string>
+    <string name="umeng_getcommentlist">获取评论列表</string>
+    <string name="umeng_sendcomment">发出评论</string>
+
+    <string name="actionbar_activity_not_found">Failed to open intent...</string>
+    <string name="share_by_weixin">微信分享</string>
+    <string name="share_by_qq">QQ分享</string>
+    <string name="share_by_yixin">易信分享</string>
+    <string name="shake_share">注册摇一摇截图（分享）</string>
+    <string name="shake_openshare">注册摇一摇（打开分享面板）</string>
+    <string name="shake_scrshot">注册摇一摇（截图）</string>
+    <string name="take_scrshot">直接截图</string>
+    <string name="play">播放</string>
+    <string name="pause">暂停</string>
+    <string name="stop">停止</string>
+    <string name="quit">退出</string>
+    <string name="video_start_time">00:00</string>
+    <string name="goto_video">摇一摇视频截图Activity</string>
+    <string name="goto_game">游戏Activity</string>
+    <string name="goto_common">普通Activity</string>
+    <string name="video">VideoActivity</string>
+    <string name="game">GameActivity</string>
+    <string name="common">CommonActivity</string>
+    <string name="back">返回</string>
+    <string name="goto_facebook">添加Facebook分享</string>
+    <string name="fb_login">Facebook登录</string>
+    <string name="fb_logout">Facebook注销</string>
+    <string name="fb_share">Facebook分享</string>
+    <string name="laiwang_share">来往分享</string>
+    <string name="instagram_share">Instagram分享</string>
+    <string name="pocket_share">Pocket分享</string>
+    <string name="linkedin_share">LinkedIn分享</string>
+    <string name="foursquare_share">FourSquare分享</string>
+    <string name="ynote_share">有道云笔记分享</string>
+    <string name="evernote_share">印象笔记分享</string>
+    <string name="pinterest_share">Pinterest分享</string>
+    <string name="custom_platform_share">自定义平台分享</string>
+    <string name="login_sina">登录（新浪微博）</string>
+    <string name="logout_sina">注销登录（新浪微博）</string>
+    <string name="login_qq">登录（QQ）</string>
+    <string name="logout_qq">注销登录（QQ）</string>
+    <string name="login_qzone">登录（QQ空间）</string>
+    <string name="logout_qzone">注销登录（QQ空间）</string>
+    <string name="whatsapp_share">whatsapp分享</string>
+    <string name="line_share">line分享</string>
+    <string name="tumblr_share">tumblr分享</string>
+    <string name="kakao_share">Kakao Talk分享</string>
+    <string name="flickr_share">flickr分享</string>
+    <string name="fb_app_id">567261760019884</string>
+    <string name="photo_post">Photo Post</string>
+    <string name="success">Success</string>
+    <string name="successfully_posted_post">Successfully posted \'%1$s\'.\nPost ID: %2$s</string>
+    <string name="error">Error</string>
+    <string name="money_error">请输入正确金额</string>
+    <string name="money_error_hint">输入的金额应最多两位小数</string>
+    <string name="status_update">Updating Facebook status at </string>
+    <string name="ok">OK</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="cancel">取消</string>
+    <string name="cancel_2">还是算了</string>
+    <string name="permission_not_granted">Unable to perform selected action because permissions were not granted.</string>
+    <string name="facebook_app_id">487692214752558</string>
+    <string name="usable_balance">可用余额</string>
+    <string name="blocked_balance">冻结余额</string>
+    <string name="toreceive_principal">待收本金</string>
+    <string name="toreceive_balance">待收收益</string>
+    <string name="current_hold_amount">活期</string>
+    <string name="user_auth_cancel">暂不认证</string>
+    <string name="bind_bank_now">立即绑定</string>
+    <string name="bind_bank_cancel">看看再说</string>
+    <string name="xs_hint">仅限首次投资用户购买</string>
+
+    <string name="deposit_now">立即充值</string>
+
+    <!-- 账户信息 开始 -->
+    <string name="user_auth">实名认证</string>
+    <string name="user_auth_true">已实名</string>
+    <string name="user_auth_false">未实名</string>
+    <string name="bind_bank_card">银行卡认证</string>
+    <string name="bank_card_binded">已认证</string>
+    <string name="bank_card_unbind">未认证</string>
+    <string name="investments">投资理财</string>
+
+    <string name="modify_login_password">修改登录密码</string>
+    <string name="reset_trade_password">重置支付密码</string>
+    <string name="modify_trade_password">修改支付密码</string>
+    <string name="modify_gesture_password">修改手势密码</string>
+    <string name="notification_setting">推送消息设置</string>
+    <string name="notification_receive">接收新消息</string>
+    <string name="notification_sound">声音</string>
+    <string name="notification_vibrate">振动</string>
+    <string name="quit_app">退出登录</string>
+    <string name="know">我知道了</string>
+
+    <string name="reword_money">累计奖励</string>
+    <string name="partner_reward">合伙人奖励规则</string>
+    <string name="partner_friend">好友统计</string>
+    <string name="partner_intend">马上邀请好友</string>
+    <string name="partner_add">补充推荐人</string>
+    <string name="my_qrcode">我的二维码</string>
+    <string name="save_qrcode">保存图片</string>
+    <string name="bird_coin">鸟币</string>
+    <string name="bird_coin_help">1.什么是鸟币\n鸟币是领投鸟上的一种虚拟货币，可通过投资变现。\n2.使用秘籍\n可与现金1:5配比投资到真实项目中,赎回时和产生的利息一起变现\n\t(举例:投资600元=100鸟币+500元人民币,按照600元计算利息)</string>
+
+    <!-- 账户信息 结束-->
+
+    <!-- 抵扣-->
+    <string name="with_draw_note">提现说明：您当月还有%s次免费提现机会，默认在没有免费提现机会时用鸟币抵扣，没有鸟币，提现扣2元人民币/次。手续费优先从账户剩余的可用余额中扣除，若不够，则从到账金额中扣除，可能会使到账金额小于提现金额。\n\n1.工作日17点之前用户发起的提现申请，当日会进行受理；\n2.17点以后提交的提现申请，将于第二个工作日10点审核。若遇节假日顺延。\n3.每周一因要审核周五、周六、周日三天的付款申请，因此略有延时。</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="bird_empty_title">您还没有鸟币</string>
+    <string name="bird_empty_content">不妨去其他地方赚取鸟币</string>
+
+
+    <string name="invest_empty_title">您没有投资</string>
+    <string name="invest_empty_content">您没有投资</string>
+    <string name="empty_data">暂无数据</string>
+
+    <string name="coupon_empty_title">您还没有理财金券</string>
+    <string name="coupon_empty_content"></string>
+    <string name="net_empty_title">暂无网络链接</string>
+    <string name="net_empty_content">请检查你的网络状态</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="friend_empty_content">没有此类朋友</string>
+
+
+    <!-- -->
+
+    <!-- 活期 begin -->
+    <string name="invest_agreement">《投资协议》</string>
+    <string name="current_account_title">我的随心投</string>
+
+    <string name="current_account_out_title">转出</string>
+    <string name="current_account_out_btn">确认转出</string>
+    <string name="current_account_in_title">转入</string>
+    <string name="current_account_out_success">转入成功</string>
+    <string name="current_account_check_success">查看我的随心投</string>
+    <string name="current_account_in_btn">确认转入</string>
+    <string name="confirm_buy">确认投资</string>
+
+    <string name="current_empty_title">您还没有活期</string>
+    <string name="current_empty_content">不妨去其他地方赚取鸟币</string>
+    <!-- 活期 end -->
+
+    <string name="current_account_out_tips">1.转入的金额，当天即产生收益，第二天可以查看昨日收益。\n2.若当天转入，当天即可转出，则不产生收益。\n3.转出的金额，第二天下午15:00前会被转出到可用余额。\n4.当持有金额&#060;%s元时，将不产生收益。</string>
+    <string name="out_money">已申请转出金额：%s</string>
+    <string name="current_buy_success">恭喜您，成功购入随心投%s元</string>
+    <string name="calculate_revenue">%s\n开始计算收益 </string>
+    <string name="get_revenue">%s\n收益到账 </string>
+
+    <string name="bindcard_note">手机App支持的银行有：%s；</string>
+    <string name="bindcard_note1">仅支持储蓄卡、借记卡，不支持信用卡；</string>
+    <string name="bindcard_note2">如果充值金额超过银行卡每日额度限制，您也可以通过领投鸟理财网页版进行网银充值；</string>
+    <string name="bindcard_note3">领投鸟理财网页版将于近日上线，尽请期待；</string>
+    <string name="bindcard_note4">如遇其他问题，可拨打服务热线\n400－999－9980。</string>
+
+    <string name="complete_info"> %s转出金额0元您可至“我的账户”查看您的余额</string>
+
+    <string name="trade_pwd">支付密码将以短信的形式发送到您的手机上，请注意查收并妥善保存。支付密码为6位随机数字，为了方便记忆，建议您收到短信后，根据短信提示内容更改密码。</string>
+    <string name="step_1">1. 点击 "重置支付密码"</string>
+    <string name="step_2">2. 联动优势将新的支付密码以短信方式发送到你的手机</string>
+    <string name="step_3">3. 查看手机短信，获取新的支付密码</string>
+
+    <string name="add">添加</string>
+
+    <string name="add_recommend_mobile">补充推荐人手机号</string>
+    <string name="other_account_login">其他账户登录</string>
+    <string name="has_added">已补充</string>
+    <string name="total_assets">总资产</string>
+    <string name="open_editpage">是否开启编辑页</string>
+    <string name="get_userinfo">获取用户信息</string>
+    <string name="total_remain">总余额</string>
+
+    <string name="deposit">充值</string>
+    <string name="bankcard_owner">持卡人</string>
+    <string name="input_your_name">请输入您的姓名</string>
+    <string name="choose_bank">选择银行</string>
+
+    <string name="support_card">仅支持储蓄卡/借记卡</string>
+
+    <string name="card_id">卡号</string>
+    <string name="deposit_nopwd">免密充值</string>
+
+    <string name="input_bankcard_id">请输入银行卡号</string>
+
+    <string name="bank">银行</string>
+    <string name="merchant_bank">中国招商银行</string>
+
+    <string name="call">呼叫</string>
+
+    <string name="choose_other_coupon">选择其他理财金券</string>
+
+
+    <string name="activite_condition1">投资满1000元满200天可以激活</string>
+    <string name="available_date">有效期至2010年12月3日</string>
+
+    <string name="coupon_usage">投资返现</string>
+
+    <string name="buy_current_account">购买随心投金额</string>
+    <string name="cong_suixintou">恭喜你，随心投转出成功.</string>
+
+    <string name="complete_out">完成转出</string>
+
+    <string name="deposit_amount">充值金额</string>
+
+
+    <string name="input_amount">请输入金额</string>
+    <string name="get_amount">实际到账金额</string>
+
+    <string name="deposit_note_amount">该银行银行卡单次充值限额10万元，单日充值限额20万元。</string>
+    <string name="product_buy_nopwd_note">开通投资免密支付后下次无需再次输入支付密码</string>
+    <string name="not_invest_yet">您还没有投资</string>
+
+
+    <string name="open_success">开通成功</string>
+    <string name="cong_open_success">恭喜您绑卡成功</string>
+
+    <string name="product_buy_success">标的转账成功</string>
+
+    <string name="deposit_open_success">现在就可以通过银行卡充值，开启财富之旅。</string>
+
+    <string name="getvalue_success">到账提醒!</string>
+
+    <string name="cong_register_success">恭喜您注册成功</string>
+
+    <string name="invest_user">投资用户</string>
+    <string name="invest_amount">投资资金</string>
+    <string name="invest_time">投资时间</string>
+    <string name="invest_success">投资成功。</string>
+    <string name="lct_product">乐巢投系列</string>
+    <string name="sta_invest_amount">起投金额</string>
+    <string name="total_amount">总金额</string>
+    <string name="pay_one_time">一次性付款</string>
+    <string name="revenue_type">收益方式</string>
+    <string name="revenue_date">起息日期</string>
+
+    <string name="current_is_over">随心投已满标，暂不支持转入</string>
+
+    <string name="phone_number">400－999－9980</string>
+
+    <string name="account_settings">账户设置</string>
+    <string name="my_anxin">我的安心投</string>
+    <string name="bank_info">银行卡信息</string>
+    <string name="update_title">版本更新</string>
+    <string name="update_btn">去更新</string>
+    <string name="download">下载中..</string>
+
+    <string name="deposit_success">充值成功</string>
+
+
+    <string name="mianmi_deposit">开通充值免密支付</string>
+
+    <string name="change_card">更换银行卡</string>
+    <string name="change_card_notice">为了保障您的账号安全，需要提供如下资料以方便人工审核</string>
+    <string name="change_card_notice1">1.您手持身份证照片正反面，显示本人脸和手臂，图片应能看清身份证号；\n2.您手持原卡，新卡正反面照片，显示本人脸和手臂，图片应能看清身份证号；\3.若原卡已丢失的，出示原卡挂失证明；\n4.原卡的开户证明或银行开具的一个月交易流水并加盖银行公章；\n5.新卡开会单子或新卡与身份证关联关系证明（银行出具）；\n6.新卡不能换成邮政储蓄卡；</string>
+
+    <string name="change_card_notice2">自提交资料2-3个工作日，登录App查看是否换卡成功</string>
+
+
+    <string name="change_card_notice3">若您丢失原卡开户证明或原卡已销毁等相关资料，请用户提供办卡证明，且证明上需印有银行柜台鲜章以便审核，您在办理过程中如有任何疑问请直接拨打\n客服热线:400-999-9980</string>
+
+    <string name="add_car">添加爱车</string>
+
+
+    <string name="reserve_success">预订成功，请关注后续消息</string>
+
+    <string name="apply_customer">申请人数：</string>
+    <string name="loan_range">贷款范围</string>
+    <string name="loan_amount">贷款金额</string>
+    <string name="loan_date">期限</string>
+    <string name="date_range">期限范围(天)</string>
+    <string name="rate_range">利率范围</string>
+    <string name="rate">利率：</string>
+    <string name="apply_process">申请流程</string>
+    <string name="tv_proc_step1">身份验证</string>
+    <string name="tv_proc_step2">人脸识别</string>
+    <string name="tv_proc_step3">联系人信息</string>
+    <string name="tv_proc_step4">运营商授权</string>
+    <string name="tv_proc_step5">其他</string>
+    <string name="apply_condition">申请条件</string>
+    <string name="tv_condition1">申请条件1</string>
+    <string name="tv_condition2">申请条件2</string>
+    <string name="tv_condition3">申请条件3</string>
+
+    <string name="apply_desc">审核说明</string>
+
+    <string name="apply_desc1">审核说明1</string>
+    <string name="apply_desc2">审核说明2</string>
+    <string name="apply_desc3">审核说明3</string>
+
+
+    <string name="cloan_desc">产品介绍</string>
+
+    <string name="cloan_desc1">年满18周岁，苹果手机为6以上，实名认证且绑定银行卡当天下载，5分钟拿3000元应急。</string>
+
+    <string name="apply_now">立即申请</string>
+
+    <string name="my_apply">我的申请</string>
+    <string name="my_visit">浏览记录</string>
+    <string name="my_message">我的消息</string>
+    <string name="username">姓名</string>
+    <string name="education_background">文化程度</string>
+    <string name="education_hint">选择文化程度</string>
+    <string name="income">收入范围</string>
+    <string name="income_hint">选择收入范围</string>
+    <string name="about_us">关于我们</string>
+    <string name="apply_time">申请时间:</string>
+    <string name="job">职业</string>
+    <string name="job_hint">请选择职业</string>
+    <string name="creditcard">银行信用卡</string>
+    <string name="creditcard_hint">是/否</string>
+    <string name="my_profile">我的资料</string>
+    <string name="profile_completed">资料已经更新</string>
+    <string name="renqi">人气</string>
+    <string name="dae">大额</string>
+    <string name="jsxk">极速下款</string>
+    <string name="bczx">不查征信</string>
+    <string name="zyzy">自由职业</string>
+    <string name="all">全部</string>
+
+    <string name="loan_range_hint">贷款金额</string>
+
+    <string name="loan_date_hint">贷款日期</string>
+
+</resources>

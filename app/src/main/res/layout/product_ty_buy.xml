@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/rl1"
+        layout="@layout/base_title" />
+
+    <View
+        android:id="@+id/v1"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/rl1"
+        android:background="@color/normal_bg" />
+
+    <TextView
+        android:id="@+id/tv_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/v1"
+        android:layout_marginLeft="24dp"
+        android:gravity="center"
+        android:text="应付金额"
+        android:textColor="@color/text_color1"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_pay_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_pay"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tv_pay"
+        android:layout_marginRight="24dp"
+        android:gravity="center"
+        android:text="10000.00 元"
+        android:textColor="@color/text_color2"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/v2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv_pay"
+        android:layout_marginLeft="24dp"
+        android:background="#E2E2E2" />
+
+    <TextView
+        android:id="@+id/tv_daishou_shouyi"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/v2"
+        android:layout_marginLeft="24dp"
+        android:gravity="center"
+        android:text="待收收益"
+        android:textColor="@color/text_color1"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_daishou_shouyi_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_daishou_shouyi"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tv_daishou_shouyi"
+        android:layout_marginRight="24dp"
+        android:gravity="center"
+        android:text="33.00 鸟币"
+        android:textColor="@color/text_color2"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/v3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv_daishou_shouyi"
+        android:layout_marginLeft="24dp"
+        android:background="#E2E2E2" />
+
+    <TextView
+        android:id="@+id/tv_deadline"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/v3"
+        android:layout_marginLeft="24dp"
+        android:gravity="center"
+        android:text="到期日期"
+        android:textColor="@color/text_color1"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_deadline_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_deadline"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tv_deadline"
+        android:layout_marginRight="24dp"
+        android:gravity="center"
+        android:text="2016-08-19"
+        android:textColor="@color/text_color2"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/tv_deadline"
+        android:background="@color/normal_bg">
+
+        <View
+            android:id="@+id/v4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/background_color4" />
+
+
+        <TextView
+            android:id="@+id/tv_coupon"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/v4"
+            android:layout_marginLeft="24dp"
+            android:gravity="center"
+            android:text="可用理财金券"
+            android:textColor="@color/text_color1"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/v5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/tv_coupon"
+            android:background="@color/background_color4" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_coupon1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl2"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_coupon_name_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="24dp"
+            android:text="返现金券500元"
+            android:textColor="@color/text_color1"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_coupon_condition_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_coupon_name_1"
+            android:layout_marginLeft="24dp"
+            android:layout_toLeftOf="@+id/iv_coupon1"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            android:maxLines="2"
+            android:text="返现金券500元 condition"
+            android:textColor="@color/text_color1"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_coupon_deadline_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_coupon_condition_1"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="4dp"
+            android:text="有效期为2016年12月15号"
+            android:textColor="@color/text_color1"
+            android:textSize="10sp" />
+
+
+        <ImageView
+            android:id="@+id/iv_coupon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24dp"
+            android:src="@drawable/icon_choice" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll6"
+        android:layout_below="@id/rl_coupon1"
+        android:background="@color/normal_bg">
+
+        <RelativeLayout
+            android:id="@+id/trust_check_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/checkbox_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/check_textview_selector"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="我已同意" />
+
+            <TextView
+                android:id="@+id/trust_html"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/checkbox_agreement"
+                android:gravity="center_vertical"
+                android:text="@string/invest_agreement"
+                android:textColor="@color/recommend" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_buy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:text="实付:0.00元"
+            android:textColor="@color/text_color2"
+            android:textSize="16sp" />
+
+
+        <Button
+            android:id="@+id/btn_buy"
+            android:layout_width="0dp"
+            android:layout_height="49dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_radius_no_round"
+            android:gravity="center"
+            android:text="立即购买"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</RelativeLayout>

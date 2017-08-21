@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent" >
+
+    <View
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/alpha_20_black" />
+
+    <LinearLayout
+        android:id="@+id/type_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="24dp"
+            android:paddingTop="5dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="5dp"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/choose_other_coupon"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_color2"
+            android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/close"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_close"
+                android:padding="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/background_color1"/>
+        <com.wash.daoliu.view.MyListView
+            android:id="@+id/coupon_list"
+            android:layout_width="match_parent"
+            android:dividerHeight="0.5dp"
+            android:divider="@drawable/divide_normal"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</RelativeLayout>

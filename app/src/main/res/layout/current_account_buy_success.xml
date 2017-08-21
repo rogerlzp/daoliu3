@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loginLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/normal_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_layout"
+        layout="@layout/base_title" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_buy_success"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/icon_selected"
+            android:drawablePadding="8dp"
+            android:gravity="left|center"
+            android:paddingLeft="48dp"
+            android:text="@string/current_buy_success" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="58dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/text_color1"></View>
+
+        <TextView
+            android:id="@+id/tv_calculate_revenue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_selected"
+            android:drawablePadding="8dp"
+            android:gravity="left|center"
+            android:paddingLeft="48dp"
+            android:text="@string/calculate_revenue" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="58dp"
+            android:background="@color/text_color1"></View>
+
+        <TextView
+            android:id="@+id/tv_get_revenue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_selected"
+            android:drawablePadding="8dp"
+            android:gravity="left|center"
+            android:paddingLeft="48dp"
+            android:text="@string/get_revenue" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_radius"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/current_account_check_success"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

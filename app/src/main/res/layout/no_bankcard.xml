@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myedittext2="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loginLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_bg"
+    android:orientation="vertical">
+    <include layout="@layout/base_title"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/normal_bg">
+
+        <ImageView
+            android:id="@+id/iv_yinghangka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="22dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/icon_nothing_yinhangka" />
+
+        <TextView
+            android:id="@+id/tv_yinhangka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_yinghangka"
+            android:layout_centerHorizontal="true"
+            android:text="您尚未添加银行卡"
+            android:textColor="@color/text_color3"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_bindcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_yinhangka"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/button_radius"
+            android:text="绑定银行卡"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_bindcard"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="目前仅支持一张银行卡"
+            android:drawableStart="@drawable/icon_note"
+            android:drawableLeft="@drawable/icon_note"
+            android:gravity="center"
+            android:drawablePadding="8dp"
+            android:textColor="@color/text_color3"
+            android:textSize="14sp" />
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

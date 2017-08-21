@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.wash.daoliu.library.PullToRefreshListView
+            android:id="@+id/anxintou_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/background_color1"
+            android:dividerHeight="0.5dp"
+            ptr:ptrAnimationStyle="flip">
+
+        </com.wash.daoliu.library.PullToRefreshListView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/background_color1"></View>
+
+    </LinearLayout>
+
+    <com.wash.daoliu.view.EmptyView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        ptr:emptyContent="@string/invest_empty_content"
+        ptr:emptyIconRes="@drawable/icon_nothing_investment"
+        ptr:emptyTitle="@string/empty_data">
+
+
+    </com.wash.daoliu.view.EmptyView>
+
+</LinearLayout>
