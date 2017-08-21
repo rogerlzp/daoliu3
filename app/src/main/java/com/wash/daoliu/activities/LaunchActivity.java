@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.Window;
 
+import com.umeng.analytics.MobclickAgent;
 import com.wash.daoliu.R;
 import com.wash.daoliu.application.LTNApplication;
 import com.wash.daoliu.utility.LTNConstants;
@@ -33,6 +34,7 @@ public class LaunchActivity extends Activity {
     protected void onResume() {
         // TODO Auto-generated method stub
         super.onResume();
+        MobclickAgent.onResume(this);
 //        JPushInterface.onResume(this);
         Thread waitThread = new Thread() {
             @Override
@@ -112,5 +114,6 @@ public class LaunchActivity extends Activity {
     protected void onPause() {
         super.onPause();
 //        JPushInterface.onPause(this);
+        MobclickAgent.onPause(this);
     }
 }

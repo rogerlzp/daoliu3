@@ -8,6 +8,7 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 
 import com.tendcloud.tenddata.TCAgent;
+import com.umeng.analytics.MobclickAgent;
 import com.umeng.socialize.Config;
 import com.umeng.socialize.PlatformConfig;
 import com.umeng.socialize.UMShareAPI;
@@ -122,6 +123,8 @@ public class LTNApplication extends Application {
 
         // 配置友盟共享
         Config.DEBUG = true;
+
+        MobclickAgent.setDebugMode(false);
 
 
     }
