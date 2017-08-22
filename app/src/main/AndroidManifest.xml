@@ -393,6 +393,13 @@
             android:name="UMENG_CHANNEL"
             android:value="Umeng" /-->
 
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="599857c7ae1bf84cbd000fe4" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="360" />
+
         <meta-data android:name="TD_APP_ID" android:value="50A9CE069A8947FF9548CBBEDB44A3AD" />
         <meta-data android:name="TD_CHANNEL_ID" android:value="shenma_android_channel_1000" />
 
