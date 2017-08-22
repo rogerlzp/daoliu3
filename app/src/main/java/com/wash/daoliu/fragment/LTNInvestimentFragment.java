@@ -79,6 +79,8 @@ public class LTNInvestimentFragment extends BaseFragment implements OnClickListe
     String loanDate = "", loanAmount = "";
     private int loanDateCounter = 0;
 
+    ProgressDialog mProgressdialog;
+
     Button btn_renqi, btn_dae, btn_jsxk, btn_bczx, btn_zyzy, btn_all;
 
 
@@ -120,6 +122,16 @@ public class LTNInvestimentFragment extends BaseFragment implements OnClickListe
         initData();
     }
 
+    public void showDialog() {
+        if (mProgressdialog == null || !mProgressdialog.isShowing()) {
+            mProgressdialog = new ProgressDialog(this.getActivity());
+            mProgressdialog.setMessage("正在加载数据");
+            mProgressdialog.setIndeterminate(true);
+            mProgressdialog.setCancelable(true);
+            mProgressdialog.show();
+        }
+    }
+
     @Override
     public void onResume() {
         super.onResume();
@@ -146,22 +158,25 @@ public class LTNInvestimentFragment extends BaseFragment implements OnClickListe
         }
     }
 
-    public void showDialog() {
-
-        mLoadingDialog = new LoadingDialogGif(this.getContext(), "正在加载数据...", R.drawable.loading_big,
-                LoadingDialogGif.TYPE_GIF, R.style.MyDialogStyle);
-
-        if (mLoadingDialog == null || !mLoadingDialog.isShowing()) {
-            mLoadingDialog = new LoadingDialogGif(this.getContext(),
-                    "正在加载数据...", R.drawable.loading_big, LoadingDialogGif.TYPE_GIF);
-
-            mLoadingDialog.show();
-        }
-    }
+//    public void showDialog() {
+//
+//        mLoadingDialog = new LoadingDialogGif(this.getContext(), "正在加载数据...", R.drawable.loading_big,
+//                LoadingDialogGif.TYPE_GIF, R.style.MyDialogStyle);
+//
+//        if (mLoadingDialog == null || !mLoadingDialog.isShowing()) {
+//            mLoadingDialog = new LoadingDialogGif(this.getContext(),
+//                    "正在加载数据...", R.drawable.loading_big, LoadingDialogGif.TYPE_GIF);
+//
+//            mLoadingDialog.show();
+//        }
+//    }
 
     public void dismissDialog() {
-        if (mLoadingDialog != null && mLoadingDialog.isShowing()) {
-            mLoadingDialog.dismiss();
+//        if (mLoadingDialog != null && mLoadingDialog.isShowing()) {
+//            mLoadingDialog.dismiss();
+//        }
+        if (mProgressdialog != null || !mProgressdialog.isShowing()) {
+            mProgressdialog.dismiss();
         }
     }
 

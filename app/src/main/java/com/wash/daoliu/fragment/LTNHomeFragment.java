@@ -173,7 +173,11 @@ public class LTNHomeFragment extends BaseFragment implements PullToRefreshBase.O
             mProgressdialog.show();
         }
     }
-
+    public void dismissDialog() {
+        if (mProgressdialog != null || !mProgressdialog.isShowing()) {
+            mProgressdialog.dismiss();
+        }
+    }
     public void getBanner() {
 
         HashMap<String, String> mReqParams = new HashMap();
@@ -287,6 +291,8 @@ public class LTNHomeFragment extends BaseFragment implements PullToRefreshBase.O
 
         //     showLoadingProgressDialog(this.getActivity(), "正在加载数据...");
 
+        showDialog();
+
         HashMap<String, String> mReqParams = new HashMap();
         mReqParams.put(LTNConstants.CLIENT_TYPE_PARAM, LTNConstants.CLIENT_TYPE_MOBILE);
 
@@ -302,7 +308,7 @@ public class LTNHomeFragment extends BaseFragment implements PullToRefreshBase.O
 
                     @Override
                     public void onReqSuccess(JSONObject jsonObject) {
-                        //    dismissProgressDialog();
+                        dismissDialog();
                         try {
                             String resultCode = jsonObject.getString(LTNConstants.RESULT_CODE);
                             // 验证码错误
