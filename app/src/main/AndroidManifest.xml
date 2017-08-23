@@ -55,7 +55,7 @@
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/logo"
-        android:label="@string/app_name2"
+        android:label="@string/app_name"
         android:largeHeap="true"
         android:screenOrientation="portrait"
         android:supportsRtl="true"
@@ -371,9 +371,9 @@
             </intent-filter>
         </service>
 
-        <meta-data
-            android:name="UMENG_APPKEY"
-            android:value="595791491c5dd0309b0004ed"></meta-data>
+        <!--<meta-data-->
+            <!--android:name="UMENG_APPKEY"-->
+            <!--android:value="595791491c5dd0309b0004ed"></meta-data>-->
 
 
         <!-- Required  . Enable it you can get statistics data with channel -->

@@ -12,8 +12,7 @@
     <string name="btn_send">发送</string>
     <string name="dialog_call_service_text">您将拨打客服电话\n%s"</string>
     <string name="dialog_call_service_title">温馨提示</string>
-    <string name="app_name">神马贷款</string>
-    <string name="app_name2">神马贷款</string>
+    <string name="app_name">贷款</string>
     <string name="action_settings">设置</string>
     <string name="submit">提交</string>
     <string name="install">安装</string>

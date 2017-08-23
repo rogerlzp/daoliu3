@@ -65,7 +65,7 @@ import java.util.zip.Inflater;
  * 首页
  */
 public class LTNHomeFragment extends BaseFragment implements PullToRefreshBase.OnRefreshListener2<ScrollView>,
-        CloanGridAdapter.OnRecyclerViewItemClickListener {
+        CloanGridAdapter.OnRecyclerViewItemClickListener, PopupWindow.OnDismissListener {
     private View rootView;
     private BannerView bannerView = null;
     private PullToRefreshScrollView mPullToRefreshScrollView = null;
@@ -74,6 +74,7 @@ public class LTNHomeFragment extends BaseFragment implements PullToRefreshBase.O
     private GridLayoutManager mLayoutManager;
     private CloanGridAdapter mCloanGridAdapter;
 
+    WindowManager.LayoutParams layoutParams;
     private String adLinkUrl = null;
     private String adImageUrl = null;
 
@@ -139,6 +140,8 @@ public class LTNHomeFragment extends BaseFragment implements PullToRefreshBase.O
         mContext = this.getContext();
 
         mContext2 = this.getActivity();
+        Window window = ((Activity) getContext()).getWindow();
+        layoutParams = window.getAttributes();
     }
 
     @Override
@@ -173,11 +176,13 @@ public class LTNHomeFragment extends BaseFragment implements PullToRefreshBase.O
             mProgressdialog.show();
         }
     }
+
     public void dismissDialog() {
         if (mProgressdialog != null || !mProgressdialog.isShowing()) {
             mProgressdialog.dismiss();
         }
     }
+
     public void getBanner() {
 
         HashMap<String, String> mReqParams = new HashMap();
@@ -516,11 +521,15 @@ public class LTNHomeFragment extends BaseFragment implements PullToRefreshBase.O
     }
 
     public void showAd() {
-        adPopUpWindow = new AdPopUpWindow(mContext2, adImageUrl, adHeight, adWidth);
-        adPopUpWindow.setBackgroundDrawable(getResources().getDrawable(R.drawable.transparent));
+
+        //  window.setAttributes(layoutParams);
+
+        // adPopUpWindow = new AdPopUpWindow(mContext2, adImageUrl, adHeight, adWidth);
+        adPopUpWindow = new AdPopUpWindow(mContext2, adImageUrl, adHeight, adWidth, layoutParams);
+       // adPopUpWindow.setBackgroundDrawable(getResources().getDrawable(R.drawable.transparent));
         adPopUpWindow.setOnClickedListener(onAdClickedListener);
         adPopUpWindow.showAtLocation(this.getView(), Gravity.CENTER, 0, 0);
-
+      //  adPopUpWindow.setOnDismissListener(this);
 //        PopupWindow popupWindow = new PopupWindow();
 //
 //        View view = (RelativeLayout) LayoutInflater.from(getActivity()).inflate(
@@ -550,4 +559,12 @@ public class LTNHomeFragment extends BaseFragment implements PullToRefreshBase.O
     }
 
 
+    @Override
+    public void onDismiss() {
+        Window window = ((Activity) getContext()).getWindow();
+        WindowManager.LayoutParams layoutParams = window.getAttributes();
+        //  Window window = ((Activity) getContext()).getWindow();
+        window.setAttributes(layoutParams);
+        adPopUpWindow.dismiss();
+    }
 }

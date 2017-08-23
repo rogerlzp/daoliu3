@@ -20,7 +20,8 @@ public class TipsPopupWindowUtils {
         View contentView =  LayoutInflater.from(context).inflate(R.layout.tip_popup_view,null);
         TextView tipTextView = (TextView)contentView.findViewById(R.id.tip_text);
         tipTextView.setText(content);
-        PopupWindow mPopupWindow = new PopupWindow(contentView, ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.WRAP_CONTENT, true);
+        PopupWindow mPopupWindow = new PopupWindow(contentView,
+                ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.WRAP_CONTENT, true);
         mPopupWindow.setBackgroundDrawable(context.getResources().getDrawable(
                 R.drawable.transparent));
         mPopupWindow.setOutsideTouchable(true);

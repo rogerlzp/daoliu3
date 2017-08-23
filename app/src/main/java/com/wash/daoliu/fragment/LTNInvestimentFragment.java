@@ -3,7 +3,6 @@ package com.wash.daoliu.fragment;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.text.format.DateUtils;
@@ -13,20 +12,15 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
-import android.widget.ProgressBar;
-import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.wash.daoliu.R;
 import com.wash.daoliu.activities.CloanDetailActivity;
-import com.wash.daoliu.activities.RegisterActivity;
 import com.wash.daoliu.adapter.CloanListAdapter;
-import com.wash.daoliu.adapter.ShopAdapter;
 import com.wash.daoliu.application.LTNApplication;
 import com.wash.daoliu.library.PullToRefreshBase;
 import com.wash.daoliu.library.PullToRefreshListView;
@@ -35,28 +29,15 @@ import com.wash.daoliu.model.Cloan;
 import com.wash.daoliu.net.ReqCallBack;
 import com.wash.daoliu.net.WCOKHttpClient;
 import com.wash.daoliu.utility.LTNConstants;
-import com.wash.daoliu.utility.StringUtils;
-import com.wash.daoliu.utility.TextUtils;
 import com.wash.daoliu.utility.Utils;
 import com.wash.daoliu.utility.ViewUtils;
 
-import org.angmarch.views.NiceSpinner;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.lang.reflect.Type;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-
-import com.wash.daoliu.R;
-import com.wash.daoliu.view.LoadingDialogGif;
-
-import cn.qqtheme.framework.picker.OptionPicker;
-import cn.qqtheme.framework.widget.WheelView;
 
 
 /**
@@ -69,7 +50,7 @@ public class LTNInvestimentFragment extends BaseFragment implements OnClickListe
     PullToRefreshListView lvProduct;
 
     public CloanListAdapter mCloanAdapter;
-    LoadingDialogGif mLoadingDialog;
+    ProgressDialog mProgressdialog;
     private int page = 0;
     // TextView nsp_loan_amount, nsp_loan_date;
     private ArrayList<Cloan> mCloanList = new ArrayList<Cloan>();
@@ -78,8 +59,6 @@ public class LTNInvestimentFragment extends BaseFragment implements OnClickListe
 
     String loanDate = "", loanAmount = "";
     private int loanDateCounter = 0;
-
-    ProgressDialog mProgressdialog;
 
     Button btn_renqi, btn_dae, btn_jsxk, btn_bczx, btn_zyzy, btn_all;
 
@@ -117,19 +96,10 @@ public class LTNInvestimentFragment extends BaseFragment implements OnClickListe
                 startActivity(intent);
             }
         });
+        showDialog();
         onPullDownToRefresh(lvProduct);
 
         initData();
-    }
-
-    public void showDialog() {
-        if (mProgressdialog == null || !mProgressdialog.isShowing()) {
-            mProgressdialog = new ProgressDialog(this.getActivity());
-            mProgressdialog.setMessage("正在加载数据");
-            mProgressdialog.setIndeterminate(true);
-            mProgressdialog.setCancelable(true);
-            mProgressdialog.show();
-        }
     }
 
     @Override
@@ -158,25 +128,13 @@ public class LTNInvestimentFragment extends BaseFragment implements OnClickListe
         }
     }
 
-//    public void showDialog() {
-//
-//        mLoadingDialog = new LoadingDialogGif(this.getContext(), "正在加载数据...", R.drawable.loading_big,
-//                LoadingDialogGif.TYPE_GIF, R.style.MyDialogStyle);
-//
-//        if (mLoadingDialog == null || !mLoadingDialog.isShowing()) {
-//            mLoadingDialog = new LoadingDialogGif(this.getContext(),
-//                    "正在加载数据...", R.drawable.loading_big, LoadingDialogGif.TYPE_GIF);
-//
-//            mLoadingDialog.show();
-//        }
-//    }
-
-    public void dismissDialog() {
-//        if (mLoadingDialog != null && mLoadingDialog.isShowing()) {
-//            mLoadingDialog.dismiss();
-//        }
-        if (mProgressdialog != null || !mProgressdialog.isShowing()) {
-            mProgressdialog.dismiss();
+    public void showDialog() {
+        if (mProgressdialog == null || !mProgressdialog.isShowing()) {
+            mProgressdialog = new ProgressDialog(this.getActivity());
+            mProgressdialog.setMessage("正在加载数据");
+            mProgressdialog.setIndeterminate(true);
+            mProgressdialog.setCancelable(true);
+            mProgressdialog.show();
         }
     }
 
@@ -468,7 +426,6 @@ public class LTNInvestimentFragment extends BaseFragment implements OnClickListe
 
                     @Override
                     public void onReqSuccess(JSONObject jsonObject) {
-                        dismissDialog();
                         try {
                             if (jsonObject.optInt(LTNConstants.RESULT_CODE) == 0) {
 
@@ -492,13 +449,19 @@ public class LTNInvestimentFragment extends BaseFragment implements OnClickListe
                         } catch (JSONException je) {
                             // Log.d(FRAGMENT_TAG, je.getMessage());
                         }
+                        if (mProgressdialog.isShowing()) {
+                            mProgressdialog.cancel();
+                        }
                         lvProduct.onRefreshComplete();
                         upDateRefreshTime();
                     }
 
                     @Override
                     public void onReqFailed(String errorMsg) {
-                        dismissDialog();
+                        Log.d(TAG, errorMsg);
+                        if (mProgressdialog.isShowing()) {
+                            mProgressdialog.cancel();
+                        }
                         lvProduct.onRefreshComplete();
                     }
                 });
@@ -506,10 +469,76 @@ public class LTNInvestimentFragment extends BaseFragment implements OnClickListe
     }
 
 
+//    public void getShops(final boolean isPullDownToRefresh) {
+//
+//        showDialog();
+//        HashMap<String, String> mReqParams = new HashMap();
+//        mReqParams.put(LTNConstants.CLIENT_TYPE_PARAM, LTNConstants.CLIENT_TYPE_MOBILE);
+//        mReqParams.put(LTNConstants.CURRENT_PAGE, "" + page);
+//        mReqParams.put(LTNConstants.PAGE_SIZE, String.valueOf(LTNConstants.PAGE_COUNT + page * LTNConstants.PAGE_COUNT));
+//
+//        String sessionKey = LTNApplication.getInstance().getSessionKey();
+//        if (sessionKey != null) {
+//            mReqParams.put(LTNConstants.SESSION_KEY, sessionKey);
+//        }
+//        if (!StringUtils.isNullOrEmpty(loanAmount)) {
+//            mReqParams.put(LTNConstants.LOAN_MIN, loanAmount);
+//        }
+//
+//        if (!StringUtils.isNullOrEmpty(loanDate)) {
+//            mReqParams.put(LTNConstants.DATE_RANGE_MIN, loanDate);
+//        }
+//
+//
+//        WCOKHttpClient.getOkHttpClient(this.getContext()).requestAsyn(LTNConstants.ACCESS_URL.CLOAN_LIST_URL, WCOKHttpClient.TYPE_GET, mReqParams,
+//                new ReqCallBack<JSONObject>() {
+//
+//                    @Override
+//                    public void onReqSuccess(JSONObject jsonObject) {
+//                        try {
+//                            if (jsonObject.optInt(LTNConstants.RESULT_CODE) == 0) {
+//
+//                                Gson gson = new Gson();
+//                                JSONObject resultObj = (JSONObject) jsonObject.get(LTNConstants.DATA);
+//
+//                                JSONArray cloanArray = resultObj.getJSONArray(LTNConstants.CLOAN_LIST);
+//
+//                                if (mCloanList == null || (mCloanList != null && mCloanList.size() == 0)) {
+//
+//                                    Type cloanType = new TypeToken<ArrayList<Cloan>>() {
+//                                    }.getType();
+//                                    mCloanList = gson.fromJson(cloanArray.toString(), cloanType);
+//                                    if (mCloanList != null) {
+//                                        mCloanAdapter.setCloans(mCloanList);
+//                                    }
+//                                }
+//
+//                            }
+//                        } catch (JSONException je) {
+//                            // Log.d(FRAGMENT_TAG, je.getMessage());
+//                        }
+//                        if (mProgressdialog.isShowing()) {
+//                            mProgressdialog.cancel();
+//                        }
+//                        lvProduct.onRefreshComplete();
+//                        upDateRefreshTime();
+//                    }
+//
+//                    @Override
+//                    public void onReqFailed(String errorMsg) {
+//                        Log.d(TAG, errorMsg);
+//                        if (mProgressdialog.isShowing()) {
+//                            mProgressdialog.cancel();
+//                        }
+//                        lvProduct.onRefreshComplete();
+//                    }
+//                });
+//
+//    }
+
     public void refreshCurrent(final boolean isPullDownToRefresh) {
 
         showDialog();
-
         HashMap<String, String> mReqParams = new HashMap();
         mReqParams.put(LTNConstants.CLIENT_TYPE_PARAM, LTNConstants.CLIENT_TYPE_MOBILE);
 
@@ -558,8 +587,6 @@ public class LTNInvestimentFragment extends BaseFragment implements OnClickListe
 
                     @Override
                     public void onReqSuccess(JSONObject jsonObject) {
-                        dismissDialog();
-
                         try {
 
                             if (jsonObject.optInt(LTNConstants.RESULT_CODE) == 0) {
@@ -583,7 +610,9 @@ public class LTNInvestimentFragment extends BaseFragment implements OnClickListe
 
                             }
 
-
+                            if (mProgressdialog.isShowing()) {
+                                mProgressdialog.cancel();
+                            }
                             lvProduct.onRefreshComplete();
                             upDateRefreshTime();
 
@@ -591,15 +620,18 @@ public class LTNInvestimentFragment extends BaseFragment implements OnClickListe
                         } catch (JSONException je) {
                             // Log.d(FRAGMENT_TAG, je.getMessage());
                         }
-
+                        if (mProgressdialog.isShowing()) {
+                            mProgressdialog.cancel();
+                        }
                         lvProduct.onRefreshComplete();
                         upDateRefreshTime();
                     }
 
                     @Override
                     public void onReqFailed(String errorMsg) {
-                        dismissDialog();
-
+                        if (mProgressdialog.isShowing()) {
+                            mProgressdialog.cancel();
+                        }
                         lvProduct.onRefreshComplete();
                         Utils.isNetworkConnected(getActivity());
                     }

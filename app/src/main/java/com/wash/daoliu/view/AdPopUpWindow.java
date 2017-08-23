@@ -36,6 +36,8 @@ public class AdPopUpWindow extends PopupWindow {
     private ImageView iv_close;
     private String imageViewUrl;
 
+
+    WindowManager.LayoutParams layoutParams;
     private int mHeight = 400;
     private int mWidth = 200;
 
@@ -50,9 +52,10 @@ public class AdPopUpWindow extends PopupWindow {
         this.listener = listener;
     }
 
-    public AdPopUpWindow(final Activity context, String imageViewUrl, int height, int width) {
+    public AdPopUpWindow(final Activity context, String imageViewUrl, int height, int width, WindowManager.LayoutParams layoutParams) {
         this.mContext = context;
         this.imageViewUrl = imageViewUrl;
+        this.layoutParams = layoutParams;
         mHeight = height;
         mWidth = width;
         initBasePopupWindow();
@@ -64,7 +67,7 @@ public class AdPopUpWindow extends PopupWindow {
      * 初始化BasePopupWindow的一些信息
      */
     private void initBasePopupWindow() {
-        setAnimationStyle(android.R.style.Animation_Dialog);
+        //       setAnimationStyle(R.style.AppTheme);
         setHeight(ViewUtils.dip2px(mContext, mHeight));
         setWidth(ViewUtils.dip2px(mContext, mWidth));
         setOutsideTouchable(true);  //默认设置outside点击无响应
@@ -118,7 +121,6 @@ public class AdPopUpWindow extends PopupWindow {
         });
 
         if (mConentView != null) {
-
             mConentView.measure(View.MeasureSpec.UNSPECIFIED, View.MeasureSpec.UNSPECIFIED);
             super.setContentView(mConentView);
             addKeyListener(mConentView);
@@ -155,12 +157,16 @@ public class AdPopUpWindow extends PopupWindow {
     /**
      * 控制窗口背景的不透明度
      */
-    private void setWindowBackgroundAlpha(float alpha) {
+    private void setWindowBackgroundAlpha(float alpha, boolean changed) {
         Window window = ((Activity) getContext()).getWindow();
         WindowManager.LayoutParams layoutParams = window.getAttributes();
         layoutParams.alpha = alpha;
         window.setAttributes(layoutParams);
-        ((Activity) getContext()).getWindow().addFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
+        if (changed) {
+            ((Activity) getContext()).getWindow().addFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
+        } else {
+            ((Activity) getContext()).getWindow().clearFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
+        }
 
     }
 
@@ -195,8 +201,18 @@ public class AdPopUpWindow extends PopupWindow {
 
     @Override
     public void dismiss() {
-        super.dismiss();
         dismissAnimator().start();
+        super.dismiss();
+
+
+        // dismissAnimator().end();
+
+        //   setBackgroundDrawable(null);
+
+        // set back
+        //   setAnimationStyle(0);
+//        Window window = ((Activity) getContext()).getWindow();
+//        window.setAttributes(this.layoutParams);
     }
 
     /**
@@ -209,7 +225,7 @@ public class AdPopUpWindow extends PopupWindow {
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {
                 float alpha = (float) animation.getAnimatedValue();
-                setWindowBackgroundAlpha(alpha);
+                setWindowBackgroundAlpha(alpha, true);
             }
         });
         animator.setDuration(360);
@@ -226,7 +242,7 @@ public class AdPopUpWindow extends PopupWindow {
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {
                 float alpha = (float) animation.getAnimatedValue();
-                setWindowBackgroundAlpha(alpha);
+                setWindowBackgroundAlpha(alpha, false);
             }
         });
         animator.setDuration(320);

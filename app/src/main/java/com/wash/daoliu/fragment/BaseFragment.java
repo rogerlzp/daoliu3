@@ -7,7 +7,6 @@ import android.view.View;
 
 import com.wash.daoliu.activities.OnClickEffectiveListener;
 import com.wash.daoliu.application.LTNApplication;
-import com.wash.daoliu.view.LoadingDialog;
 
 public abstract class BaseFragment extends Fragment {
 
@@ -27,31 +26,31 @@ public abstract class BaseFragment extends Fragment {
     public boolean isVisible;
 
 
-    public LoadingDialog loadingDialog;
-
-    public void showLoadingProgressDialog(Context context, String dialogText) {
-        this.showProgressDialog(context, dialogText);
-    }
-
-    public void showProgressDialog(Context context, CharSequence message) {
-        if (this.loadingDialog == null) {
-            this.loadingDialog = new LoadingDialog(context);
-            this.loadingDialog.setTitle(message);
-            this.loadingDialog.setCancelable(true);
-            //     this.loadingDialog.setIndeterminate(true);
-            this.loadingDialog.setCanceledOnTouchOutside(false);
-        }
-        if (!this.loadingDialog.isShowing()) {
-            this.loadingDialog.show();
-        }
-
-    }
-
-    public void dismissProgressDialog() {
-        if (this.loadingDialog != null && this.loadingDialog.isShowing()) {
-            this.loadingDialog.dismiss();
-        }
-    }
+//    public LoadingDialog loadingDialog;
+//
+//    public void showLoadingProgressDialog(Context context, String dialogText) {
+//        this.showProgressDialog(context, dialogText);
+//    }
+//
+//    public void showProgressDialog(Context context, CharSequence message) {
+//        if (this.loadingDialog == null) {
+//            this.loadingDialog = new LoadingDialog(context);
+//            this.loadingDialog.setTitle(message);
+//            this.loadingDialog.setCancelable(true);
+//            //     this.loadingDialog.setIndeterminate(true);
+//            this.loadingDialog.setCanceledOnTouchOutside(false);
+//        }
+//        if (!this.loadingDialog.isShowing()) {
+//            this.loadingDialog.show();
+//        }
+//
+//    }
+//
+//    public void dismissProgressDialog() {
+//        if (this.loadingDialog != null && this.loadingDialog.isShowing()) {
+//            this.loadingDialog.dismiss();
+//        }
+//    }
 
     public BaseOnClickEffectiveListener baseOnClickEffectiveListener;
 
